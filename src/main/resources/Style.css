@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(./StyleFile/Font/Lobster-Regular.ttf);
+
+}
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url(./StyleFile/Font/BerkshireSwash-Regular.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./StyleFile/Font/fontawesome-webfont.ttf');
+}
+.FontAwesomeIcon{
+    -fx-font-family: 'FontAwesome';
+    -fx-font-size: 18pt;
+}
+
+.Title{
+    -fx-font-family: 'Berkshire Swash';
+    -fx-font-size: 32pt;
+}
+.menuHeader{
+     -fx-font-family: 'Berkshire Swash';
+     -fx-font-size: 22pt;
+ }
+.successbtn{
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-background-color: #37bb48;
+}
+.CreateInvoicebtn{
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-background-color: #37bb48;
+    -fx-background-radius: 0;
+}
+.menubtn{
+    -fx-font-size: 12pt;
+    -fx-text-fill: black;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+.menubtn:hover {
+    -fx-background-color: aliceblue;
+}
+
+.menubar{
+    -fx-background-color: #3ab8d6;
+}
+
+.userImage{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-color: #d66382;
+    -fx-background-radius: 10px;
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+}
+
