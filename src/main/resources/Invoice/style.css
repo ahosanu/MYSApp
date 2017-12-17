@@ -1,0 +1,188 @@
+.btn-submit{
+    -fx-background-color: #1694ad;
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-fill-size: 17px;
+    -fx-cursor: hand;
+}
+.btn-update{
+    -fx-background-color: rgb(58, 170, 3);
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-fill-size: 17px;
+    -fx-cursor: hand;
+}
+.btn-update:hover{
+     -fx-background-color: rgb(48, 117, 3);
+ }
+.btn-add {
+    -fx-background-color: rgb(115, 170, 113);
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-fill-size: 17px;
+    -fx-cursor: hand;
+}
+.btn-add:hover {
+     -fx-background-color: rgb(97, 141, 95);
+}
+.btn-delete{
+    -fx-background-color: rgba(255, 110, 57, 0.81);
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-fill-size: 17px;
+    -fx-cursor: hand;
+}
+.btn-delete:hover{
+     -fx-background-color: rgba(195, 90, 48, 0.81);
+ }
+*{
+    -fx-background-radius: 0px;
+}
+.btn-submit:hover{
+    -fx-background-color: #1ab7d4;
+}
+
+.logo-bar{
+    -fx-background-color: #1694ad;
+    -fx-fill: #ffffff;
+}
+.rigth-border{
+    -fx-border-style: solid;
+    -fx-border-color: #1ab7d4;
+    -fx-border-width: 1px;
+}
+.image-circle{
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-radius: 50;
+}
+.menu-my{
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+}
+.menu-my:hover{
+    -fx-background-color: #dadada;
+}
+.menu-invoice-my{
+    -fx-fill: white;
+     -fx-background-color: #009a4f;
+     -fx-background-radius: 0px;
+
+     -fx-cursor: hand;
+ }
+.menu-invoice-my:hover{
+    -fx-background-color: rgba(0, 154, 79, 0.78);
+}
+.error{
+    -fx-border-color: rgba(255, 0, 0, 0.54);
+}
+.Text-style{
+    -fx-background-color: #1694ad;
+    -fx-text-fill: white;
+    -fx-padding: 9px 10px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+.Text-style-two {
+    -fx-background-color: rgba(22, 148, 173, 0.53);
+    -fx-text-fill: white;
+    -fx-padding: 9px 10px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+.Text-style-red {
+     -fx-background-color: rgba(255, 104, 53, 0.87);
+     -fx-text-fill: white;
+     -fx-padding: 9px 10px;
+     -fx-font-weight: bold;
+     -fx-text-alignment: center;
+ }
+.fild-style-red{
+    -fx-background-color: rgba(246, 246, 246, 0);
+    -fx-text-fill: rgba(255, 104, 53, 0.87);
+    -fx-padding: 9px 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 13pt;
+    -fx-border-color: #dadada;
+    -fx-cursor: default;
+}
+.fild-style{
+    -fx-background-color: rgba(246, 246, 246, 0);
+    -fx-text-fill: rgba(0, 0, 0, 0.87);
+    -fx-padding: 8px 10px;
+    -fx-font-weight: bold;
+    -fx-border-color: #dadada;
+    -fx-cursor: default;
+}
+.fild-style-discount {
+     -fx-background-color: rgba(246, 246, 246, 0);
+     -fx-text-fill: rgba(0, 0, 0, 0.87);
+     -fx-padding: 8px 10px;
+     -fx-font-weight: bold;
+     -fx-border-color: #dadada;
+ }
+.notice-success{
+    -fx-fill: #008a45;
+}
+.notice-error{
+    -fx-fill: rgba(255, 0, 0, 0.62);
+}
+
+.DTotalInvoice{
+    -fx-background-color: #1ab7d4;
+    -fx-text-fill: white;
+}
+.DTodaySell{
+    -fx-background-color: #00ad20;
+    -fx-text-fill: white;
+}
+
+.DGB{
+    -fx-background-color: #d5d5d5;
+}
+
+.DINFOTEXT{
+    -fx-font-size: 16px;
+}
+.DAMOUNTTEXT{
+    -fx-font-size: 22px;
+}
+
+.DEmployee{
+    -fx-background-color: #ac6aad;
+    -fx-text-fill: white;
+}
+
+
+
+.default-color0.chart-bar { -fx-bar-fill: #1bbbf9; }
+.default-color1.chart-bar { -fx-bar-fill: #e26a22; }
+
+#Images{
+    -fx-padding: 0 0 0 10px;
+}
+#Cell{
+    -fx-fill: #000000;
+    -fx-cursor: hand;
+}
+#Cell:hover{
+    -fx-fill: #d63809;
+    -fx-cursor: hand;
+}
+.InvoiceList .table-row-cell:selected {
+    -fx-background-color: gainsboro;
+}
+.InvoiceList .table-row-cell:selected .text {
+    -fx-fill: black;
+}
+.table-row-cell:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.24);
+}
+.table-view:focused {
+    -fx-background-color: -fx-focus-color,-fx-box-border,-fx-control-inner-background;
+    -fx-background-insets: 0, 0, 1;
+}
+
+

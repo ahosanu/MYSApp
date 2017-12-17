@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.geometry.*?>
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="496.0" prefWidth="960.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane minHeight="493.0" minWidth="790.0" prefHeight="610.0" prefWidth="985.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox layoutX="34.0" layoutY="53.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox prefHeight="517.0" prefWidth="198.0" style="-fx-background-color: #EBEBEB;">
+            <VBox maxWidth="200.0" minWidth="200.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="610.0" prefWidth="0.0" style="-fx-background-color: #EBEBEB;">
                <children>
-                  <Pane prefHeight="45.0" prefWidth="198.0" style="-fx-background-color: #2c86a0;" styleClass="menuhead">
+                  <Pane maxHeight="46.0" maxWidth="201.0" minHeight="46.0" minWidth="201.0" prefHeight="46.0" prefWidth="201.0" style="-fx-background-color: #2c86a0;" styleClass="menuhead">
                      <children>
-                        <Text fill="WHITE" layoutX="56.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menuHeader" text="Menu" wrappingWidth="86.1875">
+                        <Text fill="WHITE" layoutX="16.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menuHeader" text="MYS" wrappingWidth="86.1875">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Text>
+                        <Text fill="WHITE" layoutX="90.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="App" wrappingWidth="86.1875">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="90.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Md. Ahosan Ullah" wrappingWidth="120.1875" />
                      </children></Pane>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="50.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 0;" styleClass="CreateInvoicebtn" text="Creat New Invoice" textFill="WHITE">
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="50.0" onAction="#CreateInvoice" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 0;" styleClass="CreateInvoicebtn" text="Creat New Invoice" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -32,149 +40,140 @@
                         <Font size="18.0" />
                      </font>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding></Label>
+                        <Label prefHeight="29.0" prefWidth="22.0" style="-fx-label-padding: 3 0 0 0; -fx-font-size: 20pt;" styleClass="FontAwesomeIcon" text="" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets></Label>
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="179.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Deshboard">
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="179.0" onAction="#DeshboardWindow" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Dashboard">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 15pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Product">
+                  <Line endX="100.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="102.0" onAction="#Product" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Product">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 15pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Category">
+                  <Line endX="100.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="104.0" onAction="#CategoryWindow" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Category">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label rotate="-29.7" style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Employee">
+                  <Line endX="100.0" layoutX="111.0" layoutY="149.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="193.0" onAction="#Employee" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Employee">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label rotate="-56.3" style="-fx-font-size: 15pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Member">
+                  <Line endX="100.0" layoutX="111.0" layoutY="495.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="236.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Member">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="280.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Invoice List">
+                  <Line endX="100.0" layoutX="111.0" layoutY="496.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="279.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Invoice">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="325.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Sell Sheet">
+                  <Line endX="100.0" layoutX="111.0" layoutY="497.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="322.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Sell sheet">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="370.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Setting">
+                  <Line endX="100.0" layoutX="111.0" layoutY="369.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="365.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Setting">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="415.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="IN Out">
+                  <Line endX="100.0" layoutX="111.0" layoutY="413.0" startX="-100.0" stroke="#c2c2c268" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="408.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="In/Out">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <graphic>
-                        <Label prefHeight="29.0" prefWidth="26.0" styleClass="FontAwesomeIcon" text="">
-                           <padding>
-                              <Insets bottom="6.0" />
-                           </padding>
-                        </Label>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
                </children>
             </VBox>
-            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+            <VBox prefHeight="200.0" prefWidth="737.0" HBox.hgrow="ALWAYS">
                <children>
-                  <HBox prefHeight="46.0" prefWidth="762.0" styleClass="menubar">
+                  <HBox prefHeight="46.0" prefWidth="762.0" style="-fx-background-color: #39AFCC;">
                      <children>
-                        <Pane prefHeight="46.0" prefWidth="133.0" HBox.hgrow="ALWAYS" />
-                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="328.0" HBox.hgrow="ALWAYS">
+                        <Pane prefHeight="46.0" prefWidth="320.0" style="-fx-background-radius: 0;" HBox.hgrow="ALWAYS">
                            <children>
-                              <Text layoutX="171.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                           </children>
-                        </Pane>
-                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="229.0">
-                           <children>
-                              <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="180.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="userImage">
-                                 <image>
-                                    <Image url="@StyleFile/user.png" />
-                                 </image></ImageView>
-                              <Text fill="WHITE" layoutX="12.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Md. Ahosan Ullah" textAlignment="RIGHT" wrappingWidth="158.13671875">
+                              <Text fx:id="subWindowTitle" fill="WHITE" layoutX="29.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
                                  <font>
-                                    <Font name="System Bold" size="12.0" />
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="14.0" layoutY="7.0" styleClass="FontAwesomeIcon" text="" textFill="WHITE" />
+                           </children></Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="215.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="DateText" fill="WHITE" layoutX="113.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nov 14, 2017" />
+                              <Text fx:id="TimeText" fill="WHITE" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:40:55">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="AmPmText" fill="WHITE" layoutX="113.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pm">
+                                 <font>
+                                    <Font size="15.0" />
                                  </font>
                               </Text>
                            </children>
                         </Pane>
+                        <AnchorPane prefHeight="46.0" prefWidth="281.0">
+                           <children>
+                              <Label layoutX="210.0" layoutY="3.0" style="-fx-font-size: 25pt;" styleClass="FontAwesomeIcon" text="" textFill="WHITE" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="3.0" />
+                              <Text fx:id="UserFullName" fill="WHITE" layoutX="2.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Md. Ahosan Ullah" textAlignment="RIGHT" wrappingWidth="201.0" AnchorPane.bottomAnchor="14.486328125" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="12.892578125">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children></HBox>
+                  <AnchorPane fx:id="subWindow" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <AnchorPane prefHeight="29.0" prefWidth="785.0" style="-fx-background-color: #E1E1E1;">
+                     <children>
+                        <Text fill="#837f7f" layoutX="578.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright By Md. Ahoan Ullah | 2017" textAlignment="RIGHT" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="11.666015625" AnchorPane.topAnchor="6.0" />
                      </children>
-                  </HBox>
-               </children>
-            </VBox>
+                  </AnchorPane>
+               </children></VBox>
          </children>
       </HBox>
    </children>

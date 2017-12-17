@@ -21,7 +21,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MYSApp" target="1.5" />
+      <module name="MYSApp" target="1.8" />
       <module name="TestFontCSS" target="1.5" />
     </bytecodeTargetLevel>
   </component>
