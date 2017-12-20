@@ -7,14 +7,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class EmployeeTableData {
-    SimpleStringProperty name,joindate,edit;
+    SimpleStringProperty name,mobile_number,edit;
     SimpleIntegerProperty serial,empid,salary;
     public SimpleObjectProperty<ImageView> image = new SimpleObjectProperty<>();
 
 
-    public EmployeeTableData(String name, String joindate, int serial, int empid, int salary,ImageView photo) {
+    public EmployeeTableData(String name, String mobile_number, int serial, int empid, int salary,ImageView photo) {
         this.name = new SimpleStringProperty(name);
-        this.joindate = new SimpleStringProperty(joindate);
+        this.mobile_number = new SimpleStringProperty(mobile_number);
         this.serial = new SimpleIntegerProperty(serial);
         this.empid = new SimpleIntegerProperty(empid);
         this.salary = new SimpleIntegerProperty(salary);
@@ -34,16 +34,16 @@ public class EmployeeTableData {
         this.name.set(name);
     }
 
-    public String getJoindate() {
-        return joindate.get();
+    public String getmobile_number() {
+        return mobile_number.get();
     }
 
-    public SimpleStringProperty joindateProperty() {
-        return joindate;
+    public SimpleStringProperty mobile_numberProperty() {
+        return mobile_number;
     }
 
-    public void setJoindate(String joindate) {
-        this.joindate.set(joindate);
+    public void setmobile_number(String mobile_number) {
+        this.mobile_number.set(mobile_number);
     }
 
     public int getSerial() {

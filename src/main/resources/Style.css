@@ -116,3 +116,20 @@
     -fx-text-fill: #ff3f21;
     -fx-cursor: hand;
 }
+
+.Var-align{
+    -fx-padding: 13px 0px 5px 5px;
+}
+
+.addPhoto{
+    -fx-background-color: rgba(0, 112, 255, 0.59);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.ResetPassword{
+    -fx-background-color: coral;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
