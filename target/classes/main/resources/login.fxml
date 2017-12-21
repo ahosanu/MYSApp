@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="720.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#2e9469" layoutX="84.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40pt;" styleClass="Title" text="M" wrappingWidth="65.845703125">
+         <font>
+            <Font size="45.0" />
+         </font></Text>
+      <Text fill="#0c0d0d" layoutX="124.0" layoutY="154.0" rotate="4.4" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 42pt;" styleClass="Title" text="Y" wrappingWidth="51.845703125">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#ff5500" layoutX="157.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40pt;" styleClass="Title" text="S" wrappingWidth="41.845703125">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#909090" layoutX="45.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Application provied by Md. Ahosan Ullah. Student of United International University" textAlignment="CENTER" wrappingWidth="192.845703125" />
+      <Line endX="155.0" fill="#cdddd7" layoutX="141.0" layoutY="181.0" startX="-100.0" stroke="#bfbfbf" />
+      <JFXTextField fx:id="userName" labelFloat="true" layoutX="366.0" layoutY="116.0" onAction="#LoginUser" prefHeight="25.0" prefWidth="254.0" promptText="User Name" text="admin">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="366.0" layoutY="181.0" onAction="#LoginUser" prefHeight="25.0" prefWidth="254.0" promptText="Password" text="admin">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="366.0" layoutY="263.0" onAction="#LoginUser" prefHeight="37.0" prefWidth="114.0" styleClass="successbtn" text="Login" />
+      <Line endX="140.0" fill="#cdddd7" layoutX="426.0" layoutY="79.0" startX="-131.0" stroke="#bfbfbf" />
+      <Line endX="304.0" layoutX="143.0" layoutY="187.0" rotate="90.0" />
+      <Text fill="#2e9469" layoutX="306.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30pt;" styleClass="Title" text="Uese Login" wrappingWidth="203.845703125">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#6b6b6f" layoutX="364.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account?" textAlignment="CENTER" />
+      <Text fill="#6b6b6f" layoutX="365.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot mys password?" textAlignment="RIGHT" />
+   </children>
+</AnchorPane>
