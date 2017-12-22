@@ -3,6 +3,7 @@ package com.mysapp;
 import com.mysapp.Category.CategoryController;
 import com.mysapp.Employee.EmployeeController;
 import com.mysapp.Invoice.CreateInvoice;
+import com.mysapp.Invoice.InvoiceList;
 import com.mysapp.Product.ProductController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -125,6 +126,27 @@ public class MainPanelController implements Initializable{
         subWindow.getChildren().clear();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Employee/Employee.fxml"));
         loader.setController(new EmployeeController(connection));
+        Node n = null;
+        try {
+            n = (Node)loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AnchorPane.setTopAnchor(n, 0.0);
+        AnchorPane.setRightAnchor(n, 0.0);
+        AnchorPane.setLeftAnchor(n, 0.0);
+        AnchorPane.setBottomAnchor(n, 0.0);
+        subWindow.getChildren().setAll(n);
+    }
+
+    @FXML
+    void invoiceList(ActionEvent event) {
+
+        subWindowTitle.setText("Invoice List");
+
+        subWindow.getChildren().clear();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Invoice/InvoiceList.fxml"));
+        loader.setController(new InvoiceList(connection));
         Node n = null;
         try {
             n = (Node)loader.load();

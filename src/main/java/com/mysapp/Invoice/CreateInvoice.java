@@ -29,7 +29,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
+import java.text.Format;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.ResourceBundle;
 
@@ -38,9 +40,10 @@ import java.util.ResourceBundle;
  */
 public class CreateInvoice implements Initializable {
     @FXML
-    Text seller_name,TopNetAmount;
+    Text seller_name,TopNetAmount,TodayDate;
     Connection connection = null;
-    int sl_no = 1;
+
+
 
     @FXML
     TextArea Address;
@@ -107,6 +110,10 @@ public class CreateInvoice implements Initializable {
             }
 
         });
+
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = new Date();
+        TodayDate.setText(dateFormat.format(date));
     }
 
     @FXML
@@ -153,40 +160,47 @@ public class CreateInvoice implements Initializable {
             }
             subTotal += data.get(i).getTotal();
         }
-        if(find){
+        if(find) {
 
             System.out.println(LastPrice.isSelected());
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM `product` WHERE `pro_id`="+id);
+            ResultSet resultSet = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+LoginController.All_UserID+"'");
             if(resultSet.next()) {
-                int getunit = Integer.parseInt(Unit.getText());
-                double pro_price = 0;
-                if(LastPrice.isSelected())
-                    pro_price = resultSet.getDouble("net_price");
-                else
-                    pro_price = resultSet.getDouble("sell_price");
+                int get_owner_id = resultSet.getInt("owner_id");
+                if(get_owner_id == 0)
+                    get_owner_id = LoginController.All_UserID;
 
-                double total = pro_price * getunit;
-                subTotal += total;
+                resultSet = statement.executeQuery("SELECT category.owner_id, product.pro_id,product.pro_name,product.in_date,product.exp_date,product.sell_price,product.net_price,product.discount FROM category JOIN product ON category.cat_id = product.cat_id WHERE pro_id = '" + id + "' and owner_id = '" + get_owner_id + "' ");
+                if (resultSet.next()) {
+                    int getunit = Integer.parseInt(Unit.getText());
+                    double pro_price = 0;
+                    if (LastPrice.isSelected())
+                        pro_price = resultSet.getDouble("net_price");
+                    else
+                        pro_price = resultSet.getDouble("sell_price");
 
-                data.add(new InvoiceTableData(resultSet.getString("pro_name"), pro_price, unit, sl_no, id, total));
-                sl_no++;
-            }else{
-                System.out.println("Not Found ");
+                    double total = pro_price * getunit;
+                    subTotal += total;
+
+                    data.add(new InvoiceTableData(resultSet.getString("pro_name"), pro_price, unit, data.size()+1, id, total, resultSet.getDouble("discount")));
+
+                } else {
+                    System.out.println("Not Found ");
+                }
             }
+            table.setItems(data);
+            table.refresh();
+            SubTotal.setText(subTotal + "");
+            double vat_taka = Double.parseDouble(String.format("%.2f", subTotal * .02));
+            vat.setText(vat_taka + "");
+
+            double netamount = subTotal + vat_taka - Double.parseDouble(M_Discount.getText()) - Double.parseDouble(Discount.getText());
+            Net_amount.setText(netamount + "");
+            TopNetAmount.setText(netamount + "");
+
+            Change.setText("-" + netamount);
+            LastPrice.setSelected(false);
         }
-        table.setItems(data);
-        table.refresh();
-        SubTotal.setText(subTotal+"");
-        double vat_taka = Double.parseDouble(String.format("%.2f", subTotal*.02));
-        vat.setText(vat_taka+"");
-
-        double netamount = subTotal+vat_taka-Double.parseDouble(M_Discount.getText())-Double.parseDouble(Discount.getText());
-        Net_amount.setText(netamount+"");
-        TopNetAmount.setText(netamount+"");
-
-        Change.setText("-"+netamount);
-        LastPrice.setSelected(false);
     }
 
     @FXML
@@ -220,19 +234,18 @@ public class CreateInvoice implements Initializable {
 
             String CinvoiceID = userID + dateFormat.format(date);
             System.out.println(date.getTime());
-
             Statement statement = connection.createStatement();
-            int x = statement.executeUpdate("INSERT INTO `invoice`(`BuyerName`, `MemberID`, `Email`, `Mobile`, `Address`, `RowTime`, `InvoiceID`, `SubTotal`, `Vat`, `MDiscount`, `Discount`, `NetAmount`, `Pay`, `ChangeAmount`, `SellerID`,`TodayTime`,`TotalnetPrice`) VALUES" +
-                    " ('" + BuyerName.getText() + "','" + Membersl.getText()  + "','" + Email.getText().toString() + "','" + Mobile.getText() + "','" + Address.getText() + "','" + RowTime.format(date).toString() + "','" + CinvoiceID + "','" + SubTotal.getText() + "','" + vat.getText() + "','" + M_Discount.getText() + "','" + Discount.getText() + "','" + Net_amount.getText() + "','" + Pay.getText() + "','" + Change.getText() + "','" + userID + "','"+date.getTime()+"','"+getNetAmount()+"')");
-
-            if (x == 1) {
-                Statement StateInvoiceID = connection.createStatement();
-                for (InvoiceTableData InData : data) {
-                    StateInvoiceID.executeUpdate("INSERT INTO `invoicepro`(`InvoiceID`, `Name`, `Unit`, `Price`, `Total`, `ProID`,`netPrice`) VALUES " +
-                            "('" + CinvoiceID + "','" + InData.getName() + "','" + InData.getUnit() + "','" + InData.getPrice() + "','" + InData.getTotal() + "','" + InData.getID() + "','"+InData.getTotaNetPrice()+"')");
-                }
-                StateInvoiceID.close();
+            statement.executeUpdate("INSERT INTO `buyer`(`buyer_name`, `buyer_mobile`, `address`, `email`, `nowdate`, `payed_amount`, `user_id`) VALUES ('"+BuyerName.getText()+"','"+Mobile.getText()+"','"+Address.getText()+"','"+Email.getText()+"','"+TodayDate.getText()+"','"+Pay.getText()+"','"+LoginController.All_UserID+"')",Statement.RETURN_GENERATED_KEYS);
+            int key = 0;
+            ResultSet rs = statement.getGeneratedKeys();
+            if (rs.next()){
+                key=rs.getInt(1);
             }
+            System.out.println(key);
+            for (InvoiceTableData table:data)
+                statement.executeUpdate("INSERT INTO `buy_product_list`(`buyer_id`, `pro_id`, `sell_price`, `quantity`, `discount`) VALUES " +
+                        "('"+key+"','"+table.getID()+"','"+table.getPrice()+"','"+table.getUnit()+"','"+table.getDiscount()+"')");
+
             statement.close();
             data.clear();
             table.setItems(data);
@@ -251,6 +264,16 @@ public class CreateInvoice implements Initializable {
             Email.setText("");
             Mobile.setText("");
             Address.setText("");
+        }else{
+            Notifications notifications = Notifications.create()
+                    .title("Payment Error.")
+                    .hideAfter(Duration.seconds(5))
+                    .position(Pos.TOP_RIGHT)
+                    .onAction(e->{
+                        System.out.println("click");
+                    });
+            notifications.text("Payment Due. Please Pay.");
+            notifications.showWarning();
         }
 
     }
@@ -261,7 +284,23 @@ public class CreateInvoice implements Initializable {
 
     @FXML
     private void Delete(){
+        data.clear();
+        table.getItems().clear();
+        table.refresh();
 
+        SubTotal.setText("0.00");
+        vat.setText("0.00");
+        M_Discount.setText("0.00");
+        Discount.setText("0.00");
+        Net_amount.setText("0.00");
+        TopNetAmount.setText("0.00");
+        Pay.setText("");
+        Change.setText("0.00");
+        Membersl.setText("");
+        BuyerName.setText("");
+        Email.setText("");
+        Mobile.setText("");
+        Address.setText("");
     }
 
     double getNetAmount(){
@@ -293,11 +332,6 @@ public class CreateInvoice implements Initializable {
 
                 }
 
-
-
-                int ok = 0;
-                System.out.println("ok" + table.getSelectionModel().getSelectedItem().getID());
-                if (ok == 1) {
                     Notifications notifications = Notifications.create()
                             .title("Successful")
                             .hideAfter(Duration.seconds(5))
@@ -308,10 +342,14 @@ public class CreateInvoice implements Initializable {
                     notifications.text("Successfully Delete.");
                     notifications.showConfirm();
 
-                    data.clear();
+
+                    int i=1;
+                    for(InvoiceTableData Deletedata : data){
+                        Deletedata.setSerial(i++);
+                    }
                     table.setItems(data);
                     table.refresh();
-                }
+
             });
 
         }

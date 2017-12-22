@@ -138,8 +138,6 @@ public class EmployeeController implements Initializable {
                         e.printStackTrace();
                         image = new Image("/image/noimg.png");
                     }
-                    /*UserImage.setImage(image);
-                    image = new Image("/image/male.png");*/
 
                  }else{
                         image = new Image("/image/noimg.png");

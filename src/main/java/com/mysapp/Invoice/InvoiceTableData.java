@@ -10,20 +10,21 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class InvoiceTableData {
     SimpleStringProperty Name;
-    SimpleDoubleProperty Price;
+    SimpleDoubleProperty Price,Discount;
     SimpleIntegerProperty Unit;
     SimpleIntegerProperty Serial;
     SimpleIntegerProperty ID;
     SimpleDoubleProperty Total;
     SimpleDoubleProperty TotaNetPrice;
 
-    public InvoiceTableData(String name, double price, int unit, int serial, int ID, double total) {
+    public InvoiceTableData(String name, double price, int unit, int serial, int ID, double total,double discount) {
         Name = new SimpleStringProperty(name);
         Price = new SimpleDoubleProperty(price);
         Unit = new SimpleIntegerProperty(unit);
         Serial = new SimpleIntegerProperty(serial);
         this.ID = new SimpleIntegerProperty(ID);
         Total = new SimpleDoubleProperty(total);
+        this.Discount = new SimpleDoubleProperty(discount);
     }
 
     public String getName() {
@@ -108,5 +109,17 @@ public class InvoiceTableData {
 
     public void setTotaNetPrice(double totaNetPrice) {
         this.TotaNetPrice.set(totaNetPrice);
+    }
+
+    public double getDiscount() {
+        return Discount.get();
+    }
+
+    public SimpleDoubleProperty discountProperty() {
+        return Discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.Discount.set(discount);
     }
 }

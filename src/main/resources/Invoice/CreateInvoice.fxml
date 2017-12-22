@@ -49,7 +49,7 @@
                         <Font size="19.0" />
                      </font>
                   </Text>
-                  <Text layoutX="352.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="31/12/2017">
+                  <Text fx:id="TodayDate" layoutX="352.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="31/12/2017">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -77,7 +77,7 @@
                         <TableView fx:id="table" onMouseClicked="#TableClick" HBox.hgrow="ALWAYS">
                             <columns>
                                 <TableColumn fx:id="serila" maxWidth="50.0" minWidth="25.0" prefWidth="35.0" text="#" />
-                                <TableColumn fx:id="Name" minWidth="172.0" prefWidth="261.0" text="Name" />
+                                <TableColumn fx:id="Name" maxWidth="5.0E8" minWidth="172.0" prefWidth="261.0" text="Name" />
                                 <TableColumn fx:id="ID" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" resizable="false" text="ID" />
                                 <TableColumn fx:id="Units" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Unit" />
                                 <TableColumn fx:id="Price" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Price" />
@@ -90,35 +90,30 @@
                         </TableView>
                         <AnchorPane prefHeight="443.0" prefWidth="293.0">
                             <children>
-                        <Button layoutX="30.0" layoutY="292.0" mnemonicParsing="false" onAction="#SavePrint" prefHeight="36.0" prefWidth="248.0" styleClass="btn-add" text="Save &amp; Print" textFill="WHITE" />
+                        <Button layoutX="30.0" layoutY="292.0" mnemonicParsing="false" onAction="#SavePrint" prefHeight="36.0" prefWidth="248.0" styleClass="btn-add" text="Save &amp; Print" textFill="WHITE">
+                           <graphic>
+                              <Label styleClass="FAtableIcon" text="" textFill="WHITE">
+                                 <stylesheets>
+                                    <URL value="@style.css" />
+                                    <URL value="@../Style.css" />
+                                 </stylesheets>
+                              </Label>
+                           </graphic></Button>
                         <TextField fx:id="vat" editable="false" layoutX="128.0" layoutY="42.0" prefHeight="36.0" prefWidth="150.0" promptText="Tex/Vat" styleClass="fild-style" text="00.00" />
                         <TextField fx:id="Net_amount" editable="false" layoutX="128.0" layoutY="146.0" prefHeight="30.0" prefWidth="150.0" styleClass="fild-style-red" text="0.00">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="31.0" layoutY="349.0" mnemonicParsing="false" onAction="#Delete" prefHeight="36.0" prefWidth="116.0" styleClass="btn-delete" text="Delete" textFill="WHITE">
+                        <Button layoutX="31.0" layoutY="349.0" mnemonicParsing="false" onAction="#Delete" prefHeight="36.0" prefWidth="248.0" styleClass="btn-delete" text="Delete" textFill="WHITE">
                            <graphic>
                               <Label styleClass="FAtableIcon" stylesheets="@../Style.css" text="" textFill="WHITE" />
-                           </graphic>
-                        </Button>
-                        <Button layoutX="154.0" layoutY="349.0" mnemonicParsing="false" onAction="#Print" prefHeight="36.0" prefWidth="125.0" styleClass="btn-add" text="Print">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                           <graphic>
-                              <Label styleClass="FAtableIcon" text="">
-                                 <stylesheets>
-                                    <URL value="@style.css" />
-                                    <URL value="@../Style.css" />
-                                 </stylesheets>
-                              </Label>
                            </graphic>
                         </Button>
                         <TextField fx:id="SubTotal" editable="false" layoutX="128.0" layoutY="7.0" prefHeight="36.0" prefWidth="150.0" promptText="Sub Total" styleClass="fild-style" text="00.00" />
                         <TextField fx:id="Discount" layoutX="128.0" layoutY="111.0" onAction="#NetAmount_reload" onKeyReleased="#NetAmount_reload" prefHeight="36.0" prefWidth="150.0" promptText="Discount" styleClass="fild-style-discount" text="00.00" />
                         <TextField fx:id="M_Discount" editable="false" layoutX="128.0" layoutY="77.0" prefHeight="30.0" prefWidth="150.0" styleClass="fild-style" text="00.00" />
-                        <TextField fx:id="Pay" layoutX="128.0" layoutY="200.0" onAction="#NetAmount_reload" onKeyReleased="#NetAmount_reload" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
+                        <TextField fx:id="Pay" layoutX="128.0" layoutY="200.0" onAction="#SavePrint" onKeyReleased="#NetAmount_reload" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
                         <TextField fx:id="Change" editable="false" layoutX="128.0" layoutY="243.0" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
                         <Label layoutX="30.0" layoutY="42.0" prefHeight="30.0" prefWidth="98.0" styleClass="Text-style-two" text="Vat/Tex" />
                         <Label layoutX="30.0" layoutY="8.0" prefHeight="30.0" prefWidth="98.0" styleClass="Text-style" text="Sub Total" />

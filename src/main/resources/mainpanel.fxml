@@ -91,7 +91,7 @@
                      </graphic>
                   </JFXButton>
                   <Line endX="100.0" layoutX="111.0" layoutY="496.0" startX="-100.0" stroke="#c2c2c268" />
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="279.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Invoice">
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="279.0" onAction="#invoiceList" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Invoice">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
