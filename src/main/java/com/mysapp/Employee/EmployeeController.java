@@ -125,7 +125,7 @@ public class EmployeeController implements Initializable {
         Data = FXCollections.observableArrayList();
         try {
             Statement statement = connection.createStatement();
-            ResultSet rs= statement.executeQuery("SELECT user_id,full_name,phone,salary,sex,photo FROM `user` WHERE full_name LIKE '%"+keyword.getText()+"%'");
+            ResultSet rs= statement.executeQuery("SELECT user_id,full_name,phone,salary,sex,photo FROM `user` WHERE owner_id='"+LoginController.All_UserID+"' and full_name LIKE '%"+keyword.getText()+"%'");
             int i = 1;
             while (rs.next()) {
                 Image image = null;

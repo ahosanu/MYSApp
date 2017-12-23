@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXCheckBox?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -21,29 +20,24 @@
             <children>
             <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="999.0" styleClass="logo-bar">
                <children>
-                  <Text fill="WHITE" layoutX="51.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Invoice">
+                  <Text fill="WHITE" layoutX="51.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Invoice">
                      <font>
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-                <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="251.0" prefWidth="999.0">
+                <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="179.0" prefWidth="999.0">
                     <children>
-                        <TextField fx:id="productID" layoutX="25.0" layoutY="185.0" onAction="#AddProduct" prefHeight="30.0" prefWidth="162.0" promptText="Product ID" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="185.0" />
-                  <TextField fx:id="Unit" layoutX="194.0" layoutY="185.0" onAction="#AddProduct" prefHeight="30.0" prefWidth="43.0" text="1" />
-                        <Button layoutX="254.0" layoutY="185.0" mnemonicParsing="false" onAction="#AddProduct" prefHeight="30.0" prefWidth="98.0" styleClass="btn-submit" text="Add" textFill="WHITE" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="185.0" />
-                  <Button layoutX="365.0" layoutY="185.0" mnemonicParsing="false" onAction="#FindProduct" prefHeight="30.0" prefWidth="98.0" text="Find" AnchorPane.leftAnchor="365.0" AnchorPane.topAnchor="185.0" />
                   <TextField fx:id="BuyerName" layoutX="25.0" layoutY="74.0" prefHeight="30.0" prefWidth="436.0" promptText="Buyer Name" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="74.0" />
                   <TextField fx:id="Mobile" layoutX="270.0" layoutY="126.0" prefHeight="30.0" prefWidth="189.0" promptText="Mobile No." AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="126.0" />
                   <TextField fx:id="Email" layoutX="25.0" layoutY="126.0" prefHeight="30.0" prefWidth="229.0" promptText="E-Mail" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="126.0" />
                   <TextField fx:id="Membersl" layoutX="25.0" layoutY="23.0" prefHeight="30.0" prefWidth="229.0" promptText="MemberShip Number" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="23.0" />
-                  <TextArea fx:id="Address" layoutX="522.0" layoutY="87.0" prefHeight="119.0" prefWidth="448.0" promptText="Address" AnchorPane.leftAnchor="522.0" AnchorPane.topAnchor="87.0" />
+                  <TextArea fx:id="Address" layoutX="522.0" layoutY="87.0" prefHeight="70.0" prefWidth="448.0" promptText="Address" AnchorPane.leftAnchor="522.0" AnchorPane.topAnchor="87.0" />
                   <Text layoutX="25.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID" />
                   <Text layoutX="25.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyer Name" />
                   <Text layoutX="25.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail " />
                   <Text layoutX="270.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" />
-                  <Text layoutX="25.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
                   <Text layoutX="289.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date : ">
                      <font>
                         <Font size="19.0" />
@@ -57,14 +51,12 @@
                   <Text layoutX="522.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
                   <Text layoutX="522.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sell By: " />
                   <Text fx:id="seller_name" layoutX="576.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ahosan" />
-                  <Text layoutX="194.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit" />
-                  <JFXCheckBox fx:id="LastPrice" layoutX="25.0" layoutY="225.0" text="Last Price" />
                   <Text fx:id="TopNetAmount" fill="#eb0000" layoutX="641.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" textAlignment="RIGHT" wrappingWidth="328.9999989941716">
                      <font>
                         <Font name="System Bold" size="44.0" />
                      </font>
                   </Text>
-                  <Text fx:id="TopNetAmount1" layoutX="844.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay On" textAlignment="RIGHT" wrappingWidth="125.00001481175423">
+                  <Text fx:id="TopNetAmount1" layoutX="806.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payed On" textAlignment="RIGHT" wrappingWidth="161.00001481175423">
                      <font>
                         <Font name="System Bold" size="31.0" />
                      </font>
@@ -74,7 +66,7 @@
                 <HBox prefHeight="257.0" prefWidth="692.0" VBox.vgrow="ALWAYS">
                     <children>
                         <AnchorPane prefHeight="361.0" prefWidth="22.0" />
-                        <TableView fx:id="table" onMouseClicked="#TableClick" HBox.hgrow="ALWAYS">
+                        <TableView fx:id="table" HBox.hgrow="ALWAYS">
                             <columns>
                                 <TableColumn fx:id="serila" maxWidth="50.0" minWidth="25.0" prefWidth="35.0" text="#" />
                                 <TableColumn fx:id="Name" maxWidth="5.0E8" minWidth="172.0" prefWidth="261.0" text="Name" />
@@ -82,15 +74,14 @@
                                 <TableColumn fx:id="Units" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Unit" />
                                 <TableColumn fx:id="Price" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Price" />
                         <TableColumn fx:id="Total" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Total" />
-                        <TableColumn fx:id="delete" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" resizable="false" />
                             </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                         </TableView>
-                        <AnchorPane prefHeight="443.0" prefWidth="293.0">
+                        <AnchorPane prefHeight="433.0" prefWidth="322.0">
                             <children>
-                        <Button layoutX="30.0" layoutY="292.0" mnemonicParsing="false" onAction="#SavePrint" prefHeight="36.0" prefWidth="248.0" styleClass="btn-add" text="Save &amp; Print" textFill="WHITE">
+                        <Button layoutX="30.0" layoutY="292.0" mnemonicParsing="false" onAction="#SavePrint" prefHeight="36.0" prefWidth="248.0" styleClass="btn-add" text="Print" textFill="WHITE">
                            <graphic>
                               <Label styleClass="FAtableIcon" text="" textFill="WHITE">
                                  <stylesheets>
@@ -105,15 +96,10 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="31.0" layoutY="349.0" mnemonicParsing="false" onAction="#Delete" prefHeight="36.0" prefWidth="248.0" styleClass="btn-delete" text="Delete" textFill="WHITE">
-                           <graphic>
-                              <Label styleClass="FAtableIcon" stylesheets="@../Style.css" text="" textFill="WHITE" />
-                           </graphic>
-                        </Button>
                         <TextField fx:id="SubTotal" editable="false" layoutX="128.0" layoutY="7.0" prefHeight="36.0" prefWidth="150.0" promptText="Sub Total" styleClass="fild-style" text="00.00" />
-                        <TextField fx:id="Discount" layoutX="128.0" layoutY="111.0" onAction="#NetAmount_reload" onKeyReleased="#NetAmount_reload" prefHeight="36.0" prefWidth="150.0" promptText="Discount" styleClass="fild-style-discount" text="00.00" />
+                        <TextField fx:id="Discount" layoutX="128.0" layoutY="111.0" prefHeight="36.0" prefWidth="150.0" promptText="Discount" styleClass="fild-style-discount" text="00.00" />
                         <TextField fx:id="M_Discount" editable="false" layoutX="128.0" layoutY="77.0" prefHeight="30.0" prefWidth="150.0" styleClass="fild-style" text="00.00" />
-                        <TextField fx:id="Pay" layoutX="128.0" layoutY="200.0" onAction="#SavePrint" onKeyReleased="#NetAmount_reload" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
+                        <TextField fx:id="Pay" layoutX="128.0" layoutY="200.0" onAction="#SavePrint" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
                         <TextField fx:id="Change" editable="false" layoutX="128.0" layoutY="243.0" prefHeight="36.0" prefWidth="150.0" promptText="00" styleClass="fild-style-discount" />
                         <Label layoutX="30.0" layoutY="42.0" prefHeight="30.0" prefWidth="98.0" styleClass="Text-style-two" text="Vat/Tex" />
                         <Label layoutX="30.0" layoutY="8.0" prefHeight="30.0" prefWidth="98.0" styleClass="Text-style" text="Sub Total" />

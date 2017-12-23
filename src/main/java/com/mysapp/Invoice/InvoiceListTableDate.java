@@ -5,16 +5,17 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class InvoiceListTableDate {
-    SimpleIntegerProperty serial;
+    SimpleIntegerProperty serial,byer_id;
     SimpleStringProperty name,invoiceid,date;
     SimpleDoubleProperty totalprice;
 
-    public InvoiceListTableDate(int serial, String name, String invoiceid, double totalprice, String date) {
+    public InvoiceListTableDate(int serial, String name, String invoiceid, double totalprice, String date,int buyer_id) {
         this.serial = new SimpleIntegerProperty(serial);
         this.name = new SimpleStringProperty(name);
         this.invoiceid = new SimpleStringProperty(invoiceid);
         this.totalprice = new SimpleDoubleProperty(totalprice);
         this.date = new SimpleStringProperty(date);
+        this.byer_id = new SimpleIntegerProperty(buyer_id);
     }
 
     public int getSerial() {
@@ -76,5 +77,17 @@ public class InvoiceListTableDate {
 
     public void setTotalprice(double totalprice) {
         this.totalprice.set(totalprice);
+    }
+
+    public int getByer_id() {
+        return byer_id.get();
+    }
+
+    public SimpleIntegerProperty byer_idProperty() {
+        return byer_id;
+    }
+
+    public void setByer_id(int byer_id) {
+        this.byer_id.set(byer_id);
     }
 }

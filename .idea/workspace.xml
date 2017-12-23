@@ -7,88 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/ShowInvoice.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Invoice/ShowInvoice.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/Invoice/ShowInvoice.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$2$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$3$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$3.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/ShowInvoice.class" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/User Image/1_User_Image.png" afterPath="$PROJECT_DIR$/User Image/1_User_Image.png" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceTableData.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceTableData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Invoice/CreateInvoice.fxml" afterPath="$PROJECT_DIR$/src/main/resources/Invoice/CreateInvoice.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpanel.fxml" afterPath="$PROJECT_DIR$/src/main/resources/mainpanel.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/artifacts/MYSApp.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/description.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/gradle.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_jfoenix_jfoenix_1_10_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__de_jensd_fontawesomefx_8_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_23.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_controlsfx_controlsfx_8_40_14.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/uiDesigner.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Invoice/CreateInvoice.fxml" afterPath="$PROJECT_DIR$/target/classes/Invoice/CreateInvoice.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MYSApp.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User Image/1_User_Image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User Image/8_User_Image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User Image/9_User_Image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User Image/female.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml" afterPath="$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Invoice/InvoiceList.fxml" afterPath="$PROJECT_DIR$/target/classes/Invoice/InvoiceList.fxml" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Employee/EmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Employee/EmployeeController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice$1$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice$1$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/CreateInvoice.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceTableData.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceTableData.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Category/Category.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Dashboard.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Employee/Employee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Employee/UpdateEmployee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Employee/addEmployee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Invoice/CreateInvoice.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Invoice/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Product/Updateproduct.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Product/addproduct.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Product/product.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/Style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/StyleFile/Font/BerkshireSwash-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/StyleFile/Font/Lobster-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/StyleFile/Font/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/image/291201.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/image/female.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/image/male.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/image/noimg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/image/noimg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/login.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/mainpanel.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Category/Category.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Dashboard.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Employee/Employee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Employee/UpdateEmployee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Employee/addEmployee.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Invoice/CreateInvoice.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Invoice/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Product/Updateproduct.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Product/addproduct.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Product/product.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/Style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/StyleFile/Font/BerkshireSwash-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/StyleFile/Font/Lobster-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/StyleFile/Font/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/image/291201.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/image/female.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/image/male.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/image/noimg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/image/noimg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/login.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/mainpanel.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceList.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceListTableDate.class" afterPath="$PROJECT_DIR$/target/classes/com/mysapp/Invoice/InvoiceListTableDate.class" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,15 +83,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="186" column="556" lean-forward="false" selection-start-line="186" selection-start-column="536" selection-end-line="186" selection-end-column="556" />
+              <folding>
+                <marker date="1513931052446" expanded="true" signature="4265:4324" ph="SELECT user_... user" />
+                <marker date="1513931052446" expanded="true" signature="4265:4341" ph="SELECT user_... user" />
+                <marker date="1513931052446" expanded="true" signature="4265:4393" ph="SELECT user_... user" />
+                <marker date="1513931052446" expanded="true" signature="4265:4394" ph="SELECT user_... user" />
+                <marker date="1513931052446" expanded="true" signature="4265:4417" ph="SELECT user_... user" />
+                <marker date="1513931052446" expanded="true" signature="6871:6897" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:6969" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7021" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7071" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7130" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7182" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7228" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7274" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7317" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7385" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7453" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7461" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7462" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="6871:7484" ph="UPDATE `user`... " />
+                <marker date="1513931052446" expanded="true" signature="8312:8347" ph="DELETE FROM `product`... " />
+                <marker date="1513931052446" expanded="true" signature="8312:8414" ph="DELETE FROM `product`... " />
+                <marker date="1513931052446" expanded="true" signature="10021:10277" ph="INSERT INTO `user`... " />
+                <marker date="1513931052446" expanded="true" signature="10021:10338" ph="INSERT INTO `user`... " />
+                <marker date="1513931052446" expanded="true" signature="10021:10802" ph="INSERT INTO `user`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="InvoiceList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="956">
-              <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+            <state relative-caret-position="-560">
+              <caret line="136" column="35" lean-forward="false" selection-start-line="136" selection-start-column="35" selection-end-line="136" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1640#1641#0" expanded="true" />
+                <marker date="1514005172433" expanded="true" signature="4803:4887" ph="SELECT user.... user" />
+                <marker date="1514005172433" expanded="true" signature="5428:5471" ph="SELECT * FRO... buyer" />
+                <marker date="1514005172433" expanded="true" signature="5428:5631" ph="SELECT * FRO... buyer" />
+                <marker date="1514005172433" expanded="true" signature="5553:5630" ph="SELECT user.... user" />
               </folding>
             </state>
           </provider>
@@ -164,9 +139,57 @@
       <file leaf-file-name="MainPanelController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+            <state relative-caret-position="2278">
+              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowInvoice.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Invoice/ShowInvoice.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="99" column="83" lean-forward="false" selection-start-line="99" selection-start-column="83" selection-end-line="99" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowInvoice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/ShowInvoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1514002835069" expanded="true" signature="2154:2199" ph="SELECT full_... user" />
+                <marker date="1514002835069" expanded="true" signature="2154:2200" ph="SELECT full_... user" />
+                <marker date="1514002835069" expanded="true" signature="2154:2232" ph="SELECT full_... user" />
+                <marker date="1514002835069" expanded="true" signature="2367:2525" ph="SELECT produ... product" />
+                <marker date="1514002835069" expanded="true" signature="2367:2526" ph="SELECT produ... product" />
+                <marker date="1514002835069" expanded="true" signature="2367:2533" ph="SELECT produ... product" />
+                <marker date="1514002835069" expanded="true" signature="3036:3074" ph="SELECT * FRO... buyer" />
+                <marker date="1514002835069" expanded="true" signature="3036:3081" ph="SELECT * FRO... buyer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateInvoice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="265" column="32" lean-forward="false" selection-start-line="261" selection-start-column="11" selection-end-line="265" selection-end-column="32" />
+              <folding>
+                <marker date="1513840356537" expanded="true" signature="5835:5918" ph="SELECT user.... user" />
+                <marker date="1513840356537" expanded="true" signature="6176:6449" ph="SELECT categ... category" />
+                <marker date="1513840356537" expanded="true" signature="9108:9398" ph="INSERT INTO `buyer`... " />
+                <marker date="1513840356537" expanded="true" signature="9716:9945" ph="INSERT INTO `buy_product_list`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,39 +197,46 @@
       <file leaf-file-name="InvoiceListTableDate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state relative-caret-position="289">
+              <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1392#1393#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1488#1489#0" expanded="true" />
-                <element signature="e#1515#1516#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-                <element signature="e#1654#1655#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1819#1820#0" expanded="true" />
-                <element signature="e#1871#1872#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1473#1474#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1702#1703#0" expanded="true" />
+                <element signature="e#1735#1736#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1952#1953#0" expanded="true" />
+                <element signature="e#1999#2000#0" expanded="true" />
+                <element signature="e#2030#2031#0" expanded="true" />
+                <element signature="e#2066#2067#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#2193#2194#0" expanded="true" />
+                <element signature="e#2234#2235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -215,8 +245,8 @@
       <file leaf-file-name="InvoiceList.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -225,82 +255,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Dashboard.fxml">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateEmployee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/UpdateEmployee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="91" column="41" lean-forward="false" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+            <state relative-caret-position="561">
+              <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1513772237223" expanded="true" signature="2886:2922" ph="SELECT * FRO... user" />
-                <marker date="1513772237223" expanded="true" signature="2886:2929" ph="SELECT * FRO... user" />
+                <marker date="1513481591059" expanded="true" signature="2929:2977" ph="SELECT cat_i... category" />
+                <marker date="1513481591059" expanded="true" signature="2929:3039" ph="SELECT cat_i... category" />
+                <marker date="1513481591059" expanded="true" signature="3365:3849" ph="INSERT INTO `product`... " />
+                <marker date="1513481591059" expanded="true" signature="5733:5846" ph="SELECT cat_i... category" />
+                <marker date="1513481591059" expanded="true" signature="6163:6620" ph="UPDATE `product`... " />
+                <marker date="1513481591059" expanded="true" signature="6163:6629" ph="UPDATE `product`... " />
+                <marker date="1513481591059" expanded="true" signature="6163:6641" ph="UPDATE `product`... " />
+                <marker date="1513481591059" expanded="true" signature="7622:7725" ph="DELETE FROM `product`... " />
+                <marker date="1513481591059" expanded="true" signature="11226:11310" ph="SELECT user.... user" />
+                <marker date="1513481591059" expanded="true" signature="11581:11757" ph="SELECT `pro_... product" />
+                <marker date="1513481591059" expanded="true" signature="11581:11780" ph="SELECT `pro_... product" />
+                <marker date="1513481591059" expanded="true" signature="11581:11807" ph="SELECT `pro_... product" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateProduct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/UpdateProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="88" column="27" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="95" selection-end-column="11" />
-              <folding>
-                <marker date="1513479654114" expanded="true" signature="3506:3548" ph="SELECT `cat_... category" />
-                <marker date="1513479654114" expanded="true" signature="4083:4134" ph="SELECT * FRO... product" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Employee.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Employee/Employee.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addproduct.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Product/addproduct.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Product/product.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -384,12 +358,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/Style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/AddEmployee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/UpdateEmployee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceTableData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/ShowInvoice.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Invoice/ShowInvoice.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" />
       </list>
     </option>
@@ -457,8 +433,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -468,120 +446,12 @@
             </path>
             <path>
               <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Invoice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Invoice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="User Image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -605,22 +475,22 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaFX\MYSApp\src\main\resources\Employee" />
-      <recent name="D:\JavaFX\MYSApp\User Image" />
-      <recent name="D:\JavaFX\MYSApp\src\main\resources\Employee\photo" />
-      <recent name="D:\JavaFX\MYSApp\src\main\java\com\mysapp\Invoice" />
-      <recent name="D:\JavaFX\MYSApp\src\main\resources\Invoice" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mysapp.Product" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaFX\MYSApp\src\main\resources" />
       <recent name="D:\JavaFX\MYSApp\src" />
       <recent name="D:\JavaFX\MYSApp\src\main\resources\Invoice" />
       <recent name="C:\Users\ahosa\IdeaProjects\MYSApp\src\main\resources\Product" />
       <recent name="C:\Users\ahosa\IdeaProjects\MYSApp\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mysapp.Product" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaFX\MYSApp\src\main\resources\Invoice" />
+      <recent name="D:\JavaFX\MYSApp\src\main\resources\Employee" />
+      <recent name="D:\JavaFX\MYSApp\User Image" />
+      <recent name="D:\JavaFX\MYSApp\src\main\resources\Employee\photo" />
+      <recent name="D:\JavaFX\MYSApp\src\main\java\com\mysapp\Invoice" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -809,16 +679,17 @@
       <workItem from="1513826796721" duration="57000" />
       <workItem from="1513833715507" duration="6833000" />
       <workItem from="1513857764869" duration="392000" />
-      <workItem from="1513916844908" duration="5438000" />
+      <workItem from="1513916844908" duration="10201000" />
+      <workItem from="1513937592206" duration="18000" />
+      <workItem from="1513998589468" duration="6986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132282000" />
+    <option name="totallyTimeSpent" value="144049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -833,9 +704,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20937042" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20937042" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -852,6 +722,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,14 +749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/JAVAFX Work/SupperShop/src/rongit/FXML/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/SQLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -971,51 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1022#1023#0" expanded="false" />
-            <element signature="e#1072#1073#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-            <element signature="e#1139#1140#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1256#1257#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-            <element signature="e#1351#1352#0" expanded="false" />
-            <element signature="e#1409#1410#0" expanded="false" />
-            <element signature="e#1462#1463#0" expanded="false" />
-            <element signature="e#1492#1493#0" expanded="false" />
-            <element signature="e#1527#1528#0" expanded="false" />
-            <element signature="e#1580#1581#0" expanded="false" />
-            <element signature="e#1609#1610#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1718#1719#0" expanded="false" />
-            <element signature="e#1752#1753#0" expanded="false" />
-            <element signature="e#1804#1805#0" expanded="false" />
-            <element signature="e#1832#1833#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1908#1909#0" expanded="false" />
-            <element signature="e#1938#1939#0" expanded="false" />
-            <element signature="e#1973#1974#0" expanded="false" />
-            <element signature="e#2026#2027#0" expanded="false" />
-            <element signature="e#2055#2056#0" expanded="false" />
-            <element signature="e#2096#2097#0" expanded="false" />
-            <element signature="e#2135#2136#0" expanded="false" />
-            <element signature="e#2166#2167#0" expanded="false" />
-            <element signature="e#2199#2200#0" expanded="false" />
-            <element signature="e#2249#2250#0" expanded="false" />
-            <element signature="e#2276#2277#0" expanded="false" />
-            <element signature="e#2316#2317#0" expanded="false" />
-            <element signature="e#2351#2352#0" expanded="false" />
-            <element signature="e#2382#2383#0" expanded="false" />
-            <element signature="e#2416#2417#0" expanded="false" />
-            <element signature="e#2478#2479#0" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2551#2552#0" expanded="false" />
-            <element signature="e#2588#2589#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,10 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="61" column="11" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="61" selection-end-column="11" />
-          <folding>
-            <marker date="1513481175129" expanded="true" signature="3460:3544" ph="SELECT user.... user" />
-            <marker date="1513481175129" expanded="true" signature="3815:3886" ph="SELECT `cat_... category" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,36 +926,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="158" column="9" lean-forward="false" selection-start-line="158" selection-start-column="9" selection-end-line="182" selection-end-column="15" />
-          <folding>
-            <marker date="1513481591059" expanded="true" signature="2929:2977" ph="SELECT cat_i... category" />
-            <marker date="1513481591059" expanded="true" signature="2929:3039" ph="SELECT cat_i... category" />
-            <marker date="1513481591059" expanded="true" signature="3365:3849" ph="INSERT INTO `product`... " />
-            <marker date="1513481591059" expanded="true" signature="5733:5846" ph="SELECT cat_i... category" />
-            <marker date="1513481591059" expanded="true" signature="6163:6620" ph="UPDATE `product`... " />
-            <marker date="1513481591059" expanded="true" signature="6163:6629" ph="UPDATE `product`... " />
-            <marker date="1513481591059" expanded="true" signature="6163:6641" ph="UPDATE `product`... " />
-            <marker date="1513481591059" expanded="true" signature="7622:7725" ph="DELETE FROM `product`... " />
-            <marker date="1513481591059" expanded="true" signature="11226:11310" ph="SELECT user.... user" />
-            <marker date="1513481591059" expanded="true" signature="11581:11757" ph="SELECT `pro_... product" />
-            <marker date="1513481591059" expanded="true" signature="11581:11780" ph="SELECT `pro_... product" />
-            <marker date="1513481591059" expanded="true" signature="11581:11807" ph="SELECT `pro_... product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/AddEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1217#1218#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,41 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="90" />
-          <folding>
-            <element signature="e#1666#1667#0" expanded="false" />
-            <element signature="e#1710#1711#0" expanded="false" />
-            <marker date="1513833939069" expanded="true" signature="4265:4324" ph="SELECT user_... user" />
-            <marker date="1513833939069" expanded="true" signature="4265:4347" ph="SELECT user_... user" />
-            <marker date="1513833939069" expanded="true" signature="4265:4348" ph="SELECT user_... user" />
-            <marker date="1513833939069" expanded="true" signature="4265:4371" ph="SELECT user_... user" />
-            <marker date="1513833939069" expanded="true" signature="6825:6851" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:6923" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:6975" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7025" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7084" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7136" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7182" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7228" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7271" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7339" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7407" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7415" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7416" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="6825:7438" ph="UPDATE `user`... " />
-            <marker date="1513833939069" expanded="true" signature="8266:8301" ph="DELETE FROM `product`... " />
-            <marker date="1513833939069" expanded="true" signature="8266:8368" ph="DELETE FROM `product`... " />
-            <marker date="1513833939069" expanded="true" signature="9975:10231" ph="INSERT INTO `user`... " />
-            <marker date="1513833939069" expanded="true" signature="9975:10292" ph="INSERT INTO `user`... " />
-            <marker date="1513833939069" expanded="true" signature="9975:10756" ph="INSERT INTO `user`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,31 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding>
-            <element signature="e#2625#2626#0" expanded="false" />
-            <element signature="e#2662#2663#0" expanded="false" />
-            <element signature="e#2716#2717#0" expanded="false" />
-            <element signature="e#2747#2748#0" expanded="false" />
-            <element signature="e#2795#2796#0" expanded="false" />
-            <element signature="e#2838#2839#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1878">
-          <caret line="347" column="48" lean-forward="false" selection-start-line="347" selection-start-column="48" selection-end-line="347" selection-end-column="48" />
-          <folding>
-            <marker date="1513840356537" expanded="true" signature="5835:5918" ph="SELECT user.... user" />
-            <marker date="1513840356537" expanded="true" signature="6176:6183" ph="SELECT * FRO... product" />
-            <marker date="1513840356537" expanded="true" signature="6176:6400" ph="SELECT categ... category" />
-            <marker date="1513840356537" expanded="true" signature="6176:6428" ph="SELECT categ... category" />
-            <marker date="1513840356537" expanded="true" signature="6176:6449" ph="SELECT categ... category" />
-            <marker date="1513840356537" expanded="true" signature="6176:6450" ph="SELECT categ... category" />
-            <marker date="1513840356537" expanded="true" signature="9108:9398" ph="INSERT INTO `buyer`... " />
-            <marker date="1513840356537" expanded="true" signature="9716:9945" ph="INSERT INTO `buy_product_list`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,17 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Employee/Employee.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1274,33 +991,177 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/UpdateEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="91" column="41" lean-forward="false" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513772237223" expanded="true" signature="2886:2922" ph="SELECT * FRO... user" />
-            <marker date="1513772237223" expanded="true" signature="2886:2929" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/UpdateProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="88" column="27" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="95" selection-end-column="11" />
-          <folding>
-            <marker date="1513479654114" expanded="true" signature="3506:3548" ph="SELECT `cat_... category" />
-            <marker date="1513479654114" expanded="true" signature="4083:4134" ph="SELECT * FRO... product" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/UpdateEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="91" column="41" lean-forward="false" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Invoice/InvoiceList.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Employee/Employee.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="47" />
+          <folding>
+            <marker date="1513481591059" expanded="true" signature="2929:2977" ph="SELECT cat_i... category" />
+            <marker date="1513481591059" expanded="true" signature="2929:3039" ph="SELECT cat_i... category" />
+            <marker date="1513481591059" expanded="true" signature="3365:3849" ph="INSERT INTO `product`... " />
+            <marker date="1513481591059" expanded="true" signature="5733:5846" ph="SELECT cat_i... category" />
+            <marker date="1513481591059" expanded="true" signature="6163:6620" ph="UPDATE `product`... " />
+            <marker date="1513481591059" expanded="true" signature="6163:6629" ph="UPDATE `product`... " />
+            <marker date="1513481591059" expanded="true" signature="6163:6641" ph="UPDATE `product`... " />
+            <marker date="1513481591059" expanded="true" signature="7622:7725" ph="DELETE FROM `product`... " />
+            <marker date="1513481591059" expanded="true" signature="11226:11310" ph="SELECT user.... user" />
+            <marker date="1513481591059" expanded="true" signature="11581:11757" ph="SELECT `pro_... product" />
+            <marker date="1513481591059" expanded="true" signature="11581:11780" ph="SELECT `pro_... product" />
+            <marker date="1513481591059" expanded="true" signature="11581:11807" ph="SELECT `pro_... product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="265" column="32" lean-forward="false" selection-start-line="261" selection-start-column="11" selection-end-line="265" selection-end-column="32" />
+          <folding>
+            <marker date="1513840356537" expanded="true" signature="5835:5918" ph="SELECT user.... user" />
+            <marker date="1513840356537" expanded="true" signature="6176:6449" ph="SELECT categ... category" />
+            <marker date="1513840356537" expanded="true" signature="9108:9398" ph="INSERT INTO `buyer`... " />
+            <marker date="1513840356537" expanded="true" signature="9716:9945" ph="INSERT INTO `buy_product_list`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1952#1953#0" expanded="true" />
+            <element signature="e#1999#2000#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2066#2067#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/ShowInvoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1514002835069" expanded="true" signature="2154:2199" ph="SELECT full_... user" />
+            <marker date="1514002835069" expanded="true" signature="2154:2200" ph="SELECT full_... user" />
+            <marker date="1514002835069" expanded="true" signature="2154:2232" ph="SELECT full_... user" />
+            <marker date="1514002835069" expanded="true" signature="2367:2525" ph="SELECT produ... product" />
+            <marker date="1514002835069" expanded="true" signature="2367:2526" ph="SELECT produ... product" />
+            <marker date="1514002835069" expanded="true" signature="2367:2533" ph="SELECT produ... product" />
+            <marker date="1514002835069" expanded="true" signature="3036:3074" ph="SELECT * FRO... buyer" />
+            <marker date="1514002835069" expanded="true" signature="3036:3081" ph="SELECT * FRO... buyer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="186" column="556" lean-forward="false" selection-start-line="186" selection-start-column="536" selection-end-line="186" selection-end-column="556" />
+          <folding>
+            <marker date="1513931052446" expanded="true" signature="4265:4324" ph="SELECT user_... user" />
+            <marker date="1513931052446" expanded="true" signature="4265:4341" ph="SELECT user_... user" />
+            <marker date="1513931052446" expanded="true" signature="4265:4393" ph="SELECT user_... user" />
+            <marker date="1513931052446" expanded="true" signature="4265:4394" ph="SELECT user_... user" />
+            <marker date="1513931052446" expanded="true" signature="4265:4417" ph="SELECT user_... user" />
+            <marker date="1513931052446" expanded="true" signature="6871:6897" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:6969" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7021" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7071" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7130" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7182" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7228" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7274" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7317" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7385" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7453" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7461" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7462" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="6871:7484" ph="UPDATE `user`... " />
+            <marker date="1513931052446" expanded="true" signature="8312:8347" ph="DELETE FROM `product`... " />
+            <marker date="1513931052446" expanded="true" signature="8312:8414" ph="DELETE FROM `product`... " />
+            <marker date="1513931052446" expanded="true" signature="10021:10277" ph="INSERT INTO `user`... " />
+            <marker date="1513931052446" expanded="true" signature="10021:10338" ph="INSERT INTO `user`... " />
+            <marker date="1513931052446" expanded="true" signature="10021:10802" ph="INSERT INTO `user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Invoice/ShowInvoice.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="99" column="83" lean-forward="false" selection-start-line="99" selection-start-column="83" selection-end-line="99" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -1310,59 +1171,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+        <state relative-caret-position="2278">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceListTableDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
-          <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        <state relative-caret-position="-560">
+          <caret line="136" column="35" lean-forward="false" selection-start-line="136" selection-start-column="35" selection-end-line="136" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <marker date="1514005172433" expanded="true" signature="4803:4887" ph="SELECT user.... user" />
+            <marker date="1514005172433" expanded="true" signature="5428:5471" ph="SELECT * FRO... buyer" />
+            <marker date="1514005172433" expanded="true" signature="5428:5631" ph="SELECT * FRO... buyer" />
+            <marker date="1514005172433" expanded="true" signature="5553:5630" ph="SELECT user.... user" />
           </folding>
         </state>
       </provider>
