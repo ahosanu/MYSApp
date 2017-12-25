@@ -33,6 +33,7 @@ public class LoginController implements Initializable {
     private JFXPasswordField password;
 
     public static int All_UserID = 0;
+    public static int All_OwnerID = 0;
 
     @FXML
     void LoginUser(ActionEvent event) {
@@ -58,11 +59,12 @@ public class LoginController implements Initializable {
         }else{
             try {
                 Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT `user_id`,`password` FROM `user` WHERE `user_name` ='"+userName.getText()+"'");
+                ResultSet resultSet = statement.executeQuery("SELECT `owner_id`,`user_id`,`password` FROM `user` WHERE `user_name` ='"+userName.getText()+"'");
                 if(resultSet.next()) {
 
                     if (password.getText().equals(resultSet.getString("password"))) {
                         All_UserID = resultSet.getInt("user_id");
+                        All_OwnerID = resultSet.getInt("owner_id");
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainpanel.fxml"));
                         loader.setController(new MainPanelController(connection));
                         Stage stage = new Stage();

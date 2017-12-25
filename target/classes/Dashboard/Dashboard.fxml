@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="514.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="282.0" layoutY="110.0" prefHeight="200.0" prefWidth="816.0" stylesheets="@Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox layoutX="282.0" layoutY="110.0" prefHeight="200.0" prefWidth="816.0" stylesheets="@../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
@@ -35,7 +35,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
+                              <Text fx:id="totalSell" fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
                                  <font>
                                     <Font name="System Bold" size="23.0" />
                                  </font>
@@ -59,7 +59,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
+                              <Text fx:id="totalProduct" fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
                                  <font>
                                     <Font name="System Bold" size="23.0" />
                                  </font>
@@ -83,7 +83,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
+                              <Text fx:id="Member" fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
                                  <font>
                                     <Font name="System Bold" size="23.0" />
                                  </font>
@@ -107,7 +107,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
+                              <Text fx:id="TotalOrder" fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
                                  <font>
                                     <Font name="System Bold" size="23.0" />
                                  </font>
@@ -119,7 +119,7 @@
                </children>
             </HBox>
             <AnchorPane prefHeight="32.0" prefWidth="810.0" />
-            <AreaChart prefHeight="383.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
+            <AreaChart fx:id="Month" prefHeight="383.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>

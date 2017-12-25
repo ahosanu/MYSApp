@@ -130,7 +130,12 @@ public class InvoiceList implements Initializable{
     @FXML
     private void LoadTable()  {
         data = FXCollections.observableArrayList();
-
+        DateTimeFormatter dateformate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String Find_date = "";
+        try{
+            Find_date = getdate.getValue().format(dateformate);
+        }catch (Exception e){
+        }
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet1 = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+ LoginController.All_UserID+"'");
@@ -139,12 +144,7 @@ public class InvoiceList implements Initializable{
                 if (get_owner_id == 0)
                     get_owner_id = LoginController.All_UserID;
 
-                DateTimeFormatter dateformate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-                String Find_date = "";
-                try{
-                    Find_date = getdate.getValue().format(dateformate);
-                }catch (Exception e){
-                }
+
                 resultSet1 = statement.executeQuery("SELECT * FROM `buyer` WHERE nowdate LIKE '%"+Find_date+"%' and buyer_id LIKE '%"+keyword.getText()+"%' and buyer.user_id IN (SELECT user.owner_id FROM user WHERE user_id='"+LoginController.All_UserID+"')");
                 while (resultSet1.next()) {
                     Date date = new SimpleDateFormat("dd/MM/yyyy").parse( resultSet1.getString("nowdate"));

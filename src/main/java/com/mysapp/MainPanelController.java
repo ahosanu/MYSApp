@@ -1,10 +1,13 @@
 package com.mysapp;
 
 import com.mysapp.Category.CategoryController;
+import com.mysapp.Dashboard.DashboardController;
 import com.mysapp.Employee.EmployeeController;
+import com.mysapp.InOutEmployee.InOutController;
 import com.mysapp.Invoice.CreateInvoice;
 import com.mysapp.Invoice.InvoiceList;
 import com.mysapp.Product.ProductController;
+import com.mysapp.Setting.Settings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -46,8 +49,8 @@ public class MainPanelController implements Initializable{
     void DeshboardWindow() {
         subWindowTitle.setText("Dashboard");
         subWindow.getChildren().clear();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Dashboard.fxml"));
-        loader.setController(new DashboardController());
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Dashboard/Dashboard.fxml"));
+        loader.setController(new DashboardController(connection));
         Node n = null;
         try {
             n = (Node)loader.load();
@@ -84,6 +87,26 @@ public class MainPanelController implements Initializable{
     }
 
     @FXML
+    void SettingWindow() {
+        subWindowTitle.setText("Setting");
+
+        subWindow.getChildren().clear();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Setting/Settings.fxml"));
+        loader.setController(new Settings(connection));
+        Node n = null;
+        try {
+            n = (Node)loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AnchorPane.setTopAnchor(n, 0.0);
+        AnchorPane.setRightAnchor(n, 0.0);
+        AnchorPane.setLeftAnchor(n, 0.0);
+        AnchorPane.setBottomAnchor(n, 0.0);
+        subWindow.getChildren().setAll(n);
+    }
+
+    @FXML
     void Product(ActionEvent event) {
 
         subWindowTitle.setText("Product");
@@ -91,6 +114,27 @@ public class MainPanelController implements Initializable{
         subWindow.getChildren().clear();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Product/product.fxml"));
         loader.setController(new ProductController(connection));
+        Node n = null;
+        try {
+            n = (Node)loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AnchorPane.setTopAnchor(n, 0.0);
+        AnchorPane.setRightAnchor(n, 0.0);
+        AnchorPane.setLeftAnchor(n, 0.0);
+        AnchorPane.setBottomAnchor(n, 0.0);
+        subWindow.getChildren().setAll(n);
+    }
+
+    @FXML
+    private void InOutWindow(ActionEvent event) {
+
+        subWindowTitle.setText("In/Out Employee");
+
+        subWindow.getChildren().clear();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/InOutEmployee/InOutEmployee.fxml"));
+        loader.setController(new InOutController(connection));
         Node n = null;
         try {
             n = (Node)loader.load();
