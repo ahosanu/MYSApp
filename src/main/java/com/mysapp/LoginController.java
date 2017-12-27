@@ -34,6 +34,7 @@ public class LoginController implements Initializable {
 
     public static int All_UserID = 0;
     public static int All_OwnerID = 0;
+    public static String All_FullName;
 
     @FXML
     void LoginUser(ActionEvent event) {
@@ -59,12 +60,13 @@ public class LoginController implements Initializable {
         }else{
             try {
                 Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT `owner_id`,`user_id`,`password` FROM `user` WHERE `user_name` ='"+userName.getText()+"'");
+                ResultSet resultSet = statement.executeQuery("SELECT `owner_id`,`full_name`,`user_id`,`password` FROM `user` WHERE `user_name` ='"+userName.getText()+"'");
                 if(resultSet.next()) {
 
                     if (password.getText().equals(resultSet.getString("password"))) {
                         All_UserID = resultSet.getInt("user_id");
                         All_OwnerID = resultSet.getInt("owner_id");
+                        All_FullName = resultSet.getString("full_name");
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainpanel.fxml"));
                         loader.setController(new MainPanelController(connection));
                         Stage stage = new Stage();
@@ -92,9 +94,11 @@ public class LoginController implements Initializable {
                     notifications.showError();
                 }
             }catch (SQLException e) {
+                e.printStackTrace();
                 notifications.text("Connection Failed.");
                 notifications.showWarning();
             } catch (IOException e) {
+                e.printStackTrace();
                 notifications.text("Loading Failed.");
                 notifications.showWarning();
             }

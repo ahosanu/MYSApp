@@ -18,21 +18,18 @@
          <children>
             <Pane prefHeight="68.0" prefWidth="730.0">
                <children>
-                  <JFXButton layoutX="557.0" layoutY="16.0" onAction="#AddProduct" styleClass="successbtn" text="Add New Product" />
+                  <JFXButton layoutX="557.0" layoutY="16.0" onAction="#Print" styleClass="successbtn" text="Print Sheet" />
                   <JFXTextField fx:id="keyword" labelFloat="true" layoutX="14.0" layoutY="16.0" onAction="#LoadTable" onKeyReleased="#LoadTable" prefColumnCount="4" prefHeight="37.0" prefWidth="519.0" promptText="Product Serach By Name " />
                </children>
             </Pane>
-            <TableView fx:id="producttable" minWidth="730.0" onMouseClicked="#update" prefHeight="340.0" prefWidth="730.0" styleClass="productTable" VBox.vgrow="ALWAYS">
+            <TableView fx:id="sellTable" minWidth="730.0" prefHeight="340.0" prefWidth="730.0" styleClass="productTable" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="serial" editable="false" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" resizable="false" text="#" />
                 <TableColumn fx:id="name" editable="false" maxWidth="499982.0" minWidth="100.0" prefWidth="255.0" text="Name" />
                   <TableColumn fx:id="proid" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Product ID" />
-                  <TableColumn fx:id="sellprice" editable="false" maxWidth="100.0" minWidth="80.0" resizable="false" text="Sell Price" />
-                  <TableColumn fx:id="lastprice" editable="false" maxWidth="100.0" minWidth="80.0" resizable="false" text="Last Price" />
-                  <TableColumn fx:id="expdate" editable="false" maxWidth="100.0" minWidth="80.0" resizable="false" text="Exp. Date" />
-                  <TableColumn fx:id="Discount" editable="false" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="Discount" />
-                  <TableColumn fx:id="edit" editable="false" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" resizable="false" />
-                  <TableColumn fx:id="delete" editable="false" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" resizable="false" />
+                  <TableColumn fx:id="sellunit" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Total Sell Unit" />
+                  <TableColumn fx:id="Amount" editable="false" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" resizable="false" text="Total Sell Amount" />
+                  <TableColumn fx:id="profit" editable="false" maxWidth="100.0" minWidth="80.0" resizable="false" text="Total Profit" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

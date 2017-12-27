@@ -6,7 +6,9 @@ import com.mysapp.Employee.EmployeeController;
 import com.mysapp.InOutEmployee.InOutController;
 import com.mysapp.Invoice.CreateInvoice;
 import com.mysapp.Invoice.InvoiceList;
+import com.mysapp.Member.MemberController;
 import com.mysapp.Product.ProductController;
+import com.mysapp.SellSheet.SellSheetController;
 import com.mysapp.Setting.Settings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -42,6 +44,7 @@ public class MainPanelController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         new autoTime(TimeText, AmPmText, DateText);
+        UserFullName.setText(LoginController.All_FullName);
         DeshboardWindow();
     }
 
@@ -202,6 +205,52 @@ public class MainPanelController implements Initializable{
         AnchorPane.setLeftAnchor(n, 0.0);
         AnchorPane.setBottomAnchor(n, 0.0);
         subWindow.getChildren().setAll(n);
+    }
+
+    @FXML
+    void MemberList(ActionEvent event) {
+
+        subWindowTitle.setText("Member List");
+
+        subWindow.getChildren().clear();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Member/Member.fxml"));
+        loader.setController(new MemberController(connection));
+        Node n = null;
+        try {
+            n = (Node)loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AnchorPane.setTopAnchor(n, 0.0);
+        AnchorPane.setRightAnchor(n, 0.0);
+        AnchorPane.setLeftAnchor(n, 0.0);
+        AnchorPane.setBottomAnchor(n, 0.0);
+        subWindow.getChildren().setAll(n);
+    }
+    @FXML
+    void SellSheet(ActionEvent event) {
+
+        subWindowTitle.setText("Sell Sheet");
+
+        subWindow.getChildren().clear();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/SellSheet/SellSheet.fxml"));
+        loader.setController(new SellSheetController(connection));
+        Node n = null;
+        try {
+            n = (Node)loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AnchorPane.setTopAnchor(n, 0.0);
+        AnchorPane.setRightAnchor(n, 0.0);
+        AnchorPane.setLeftAnchor(n, 0.0);
+        AnchorPane.setBottomAnchor(n, 0.0);
+        subWindow.getChildren().setAll(n);
+    }
+
+    @FXML
+    private void logout(){
+
     }
 
 }

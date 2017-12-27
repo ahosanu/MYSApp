@@ -82,7 +82,7 @@
                      </graphic>
                   </JFXButton>
                   <Line endX="100.0" layoutX="111.0" layoutY="495.0" startX="-100.0" stroke="#c2c2c268" />
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="236.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Member">
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="236.0" onAction="#MemberList" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Member">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -100,7 +100,7 @@
                      </graphic>
                   </JFXButton>
                   <Line endX="100.0" layoutX="111.0" layoutY="497.0" startX="-100.0" stroke="#c2c2c268" />
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="322.0" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Sell sheet">
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="322.0" onAction="#SellSheet" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Sell sheet">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -124,6 +124,14 @@
                      </cursor>
                      <graphic>
                         <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="10.0" layoutY="452.0" onAction="#logout" prefHeight="43.0" prefWidth="211.0" styleClass="menubtn" text="Logout">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <Label style="-fx-font-size: 16pt;" styleClass="FontAwesomeIcon" text="" />
                      </graphic>
                   </JFXButton>
                </children>

@@ -159,15 +159,16 @@ public class CreateInvoice implements Initializable {
                 find=false;
             }
             subTotal += data.get(i).getTotal();
+            table.refresh();
         }
         if(find) {
 
             System.out.println(LastPrice.isSelected());
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+LoginController.All_UserID+"'");
-            if(resultSet.next()) {
+            ResultSet resultSet = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='" + LoginController.All_UserID + "'");
+            if (resultSet.next()) {
                 int get_owner_id = resultSet.getInt("owner_id");
-                if(get_owner_id == 0)
+                if (get_owner_id == 0)
                     get_owner_id = LoginController.All_UserID;
 
                 resultSet = statement.executeQuery("SELECT category.owner_id, product.pro_id,product.pro_name,product.in_date,product.exp_date,product.sell_price,product.net_price,product.discount FROM category JOIN product ON category.cat_id = product.cat_id WHERE pro_id = '" + id + "' and owner_id = '" + get_owner_id + "' ");
@@ -182,12 +183,13 @@ public class CreateInvoice implements Initializable {
                     double total = pro_price * getunit;
                     subTotal += total;
 
-                    data.add(new InvoiceTableData(resultSet.getString("pro_name"), pro_price, unit, data.size()+1, id, total, resultSet.getDouble("discount")));
+                    data.add(new InvoiceTableData(resultSet.getString("pro_name"), pro_price, unit, data.size() + 1, id, total, resultSet.getDouble("discount")));
 
                 } else {
                     System.out.println("Not Found ");
                 }
             }
+        }
             table.setItems(data);
             table.refresh();
             SubTotal.setText(subTotal + "");
@@ -200,7 +202,7 @@ public class CreateInvoice implements Initializable {
 
             Change.setText("-" + netamount);
             LastPrice.setSelected(false);
-        }
+
     }
 
     @FXML
