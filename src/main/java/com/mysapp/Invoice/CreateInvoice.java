@@ -2,6 +2,7 @@ package com.mysapp.Invoice;
 
 import com.jfoenix.controls.JFXCheckBox;
 import com.mysapp.LoginController;
+import com.mysapp.PrintDocument;
 import com.mysapp.Product.ProductTableDate;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -16,11 +17,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -127,26 +133,27 @@ public class CreateInvoice implements Initializable {
 
     @FXML
     private void FindProduct() throws IOException {
-       /* FXMLLoader Loader = new FXMLLoader(getClass().getResource("FindProduct.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Invoice/Findproduct.fxml"));
         Stage stage = new Stage();
-        FindProduct addProduct = new FindProduct(table,data,connection,SubTotal,vat,Discount,M_Discount,Net_amount,Pay,Change);
+        FindProductController addProduct = new FindProductController(connection);
         Loader.setController(addProduct);
         Parent root1 = (Parent) Loader.load();
         stage.setTitle("Find Product | Rong-IT | SuperShop");
         stage.setScene(new Scene(root1));
         stage.setFullScreen(false);
         stage.setResizable(false);
-        stage.setOnCloseRequest(E->{
-            System.out.println(addProduct.SelectID +" - " + addProduct.AddUnit);
-            try {
-                updateProductlist(Integer.parseInt(Unit.getText()), addProduct.SelectID);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            productID.setText("");
-            Unit.setText("1");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setOnHidden(E->{
+           if(addProduct.isClick){
+               System.out.println("yes");
+               try {
+                   updateProductlist(Integer.parseInt(addProduct.Unit.getText()),addProduct.producttable.getSelectionModel().getSelectedItem().getProid());
+               } catch (SQLException e) {
+                   e.printStackTrace();
+               }
+           }
         });
-        stage.show();*/
+        stage.show();
     }
 
     void updateProductlist(int unit,int id) throws SQLException {
@@ -173,7 +180,7 @@ public class CreateInvoice implements Initializable {
 
                 resultSet = statement.executeQuery("SELECT category.owner_id, product.pro_id,product.pro_name,product.in_date,product.exp_date,product.sell_price,product.net_price,product.discount FROM category JOIN product ON category.cat_id = product.cat_id WHERE pro_id = '" + id + "' and owner_id = '" + get_owner_id + "' ");
                 if (resultSet.next()) {
-                    int getunit = Integer.parseInt(Unit.getText());
+                    int getunit = unit;
                     double pro_price = 0;
                     if (LastPrice.isSelected())
                         pro_price = resultSet.getDouble("net_price");
@@ -266,6 +273,7 @@ public class CreateInvoice implements Initializable {
             Email.setText("");
             Mobile.setText("");
             Address.setText("");
+            Print(key);
         }else{
             Notifications notifications = Notifications.create()
                     .title("Payment Error.")
@@ -279,9 +287,27 @@ public class CreateInvoice implements Initializable {
         }
 
     }
-    @FXML
-    private void Print(){
+    private void Print(int id){
+        PrinterJob pj = PrinterJob.getPrinterJob();
 
+        PageFormat pf = pj.defaultPage();
+        Paper paper = new Paper();
+        double margin = 10; // half inch
+        paper.setSize(6*72,9*72);
+        paper.setImageableArea(0.5*72,0.5*72,6*72,9*72);
+
+
+        pf.setPaper(paper);
+
+
+        pj.setPrintable(new PrintDocument(connection,id), pf);
+        if (pj.printDialog()) {
+            try {
+                pj.print();
+            } catch (PrinterException e) {
+                System.out.println(e);
+            }
+        }
     }
 
     @FXML

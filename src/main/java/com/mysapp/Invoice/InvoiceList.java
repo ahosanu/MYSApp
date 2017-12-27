@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import com.mysapp.Employee.UpdateEmployee;
 import com.mysapp.LoginController;
+import com.mysapp.PrintDocument;
 import com.mysapp.Product.ProductTableDate;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,6 +23,8 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 
+import javax.print.PrintService;
+import java.awt.print.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -184,8 +187,57 @@ public class InvoiceList implements Initializable{
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.show();
         }else if(cell == 6 && row < data.size()) {
-
+            Print(InvoiceTable.getSelectionModel().getSelectedItem().getByer_id());
         }
     }
 
+    private void Print(int id) {
+        PrinterJob pj = PrinterJob.getPrinterJob();
+
+        PageFormat pf = pj.defaultPage();
+        Paper paper = new Paper();
+        double margin = 10; // half inch
+        paper.setSize(6*72,9*72);
+        paper.setImageableArea(0.5*72,0.5*72,6*72,9*72);
+
+
+        pf.setPaper(paper);
+
+
+        pj.setPrintable(new PrintDocument(connection,id), pf);
+        /*if (pj.printDialog()) {
+            try {
+                pj.print();
+            } catch (PrinterException e) {
+                System.out.println(e);
+            }
+        }*/
+
+        PrintService ps = findPrintService();
+        //create a printerJob
+        PrinterJob job = PrinterJob.getPrinterJob();
+        //set the printService found (should be tested)
+        try {
+            job.setPrintService(ps);
+            //set the printable (an object with the print method that can be called by "job.print")
+            //job.setPrintable((Printable) this);
+            job.setPrintable(new PrintDocument(connection,id), pf);
+            //call je print method of the Printable object
+            job.print();
+
+        } catch (PrinterException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public PrintService findPrintService()
+    {
+        for (PrintService service : PrinterJob.lookupPrintServices())
+        {
+            if (service.getName().equalsIgnoreCase("Microsoft Print to PDF"))
+                return service;
+        }
+
+        return null;
+    }
 }

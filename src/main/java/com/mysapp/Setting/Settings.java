@@ -59,10 +59,13 @@ public class Settings implements Initializable{
     public void initialize(URL location, ResourceBundle resources) {
         BufferedImage read = null;
         try {
-            read = ImageIO.read(new File("./User Image/"+LoginController.All_UserID+"_User_Image.png"));
-            Image image = SwingFXUtils.toFXImage(read, null);
-            UserImage.setImage(image);
-
+            try {
+                read = ImageIO.read(new File("./User Image/" + LoginController.All_UserID + "_User_Image.png"));
+                Image image = SwingFXUtils.toFXImage(read, null);
+                UserImage.setImage(image);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM `user` WHERE user_id='"+LoginController.All_UserID+"'");
             if(resultSet.next()){
@@ -78,8 +81,6 @@ public class Settings implements Initializable{
                 fullname.setText(resultSet.getString("full_name"));
                 permanentAddress.setText(resultSet.getString("permanent_address"));
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }

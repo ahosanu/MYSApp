@@ -67,8 +67,18 @@ public class LoginController implements Initializable {
                         All_UserID = resultSet.getInt("user_id");
                         All_OwnerID = resultSet.getInt("owner_id");
                         All_FullName = resultSet.getString("full_name");
-                        FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainpanel.fxml"));
-                        loader.setController(new MainPanelController(connection));
+
+
+                        FXMLLoader loader;
+                        if(All_UserID == All_OwnerID) {
+                            loader = new FXMLLoader(getClass().getResource("/mainpanel.fxml"));
+                            loader.setController(new MainPanelController(connection));
+                        }
+                        else {
+                            loader = new FXMLLoader(getClass().getResource("/Employeemainpanel.fxml"));
+                            loader.setController(new EmployeeMainPanelController(connection));
+                        }
+
                         Stage stage = new Stage();
                         Parent parent = loader.load();
                         stage.setTitle("Main Control Panel");
