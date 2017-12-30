@@ -17,6 +17,7 @@ public class Main extends Application {
         loader.setController(new LoginController());
         Parent root = loader.load();
         primaryStage.setTitle("Login User");
+        primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root));
         primaryStage.setOnCloseRequest(E->{
             System.exit(0);

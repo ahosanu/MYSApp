@@ -23,6 +23,7 @@ import javafx.util.Callback;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
+import javax.print.PrintService;
 import java.awt.print.PageFormat;
 import java.awt.print.Paper;
 import java.awt.print.PrinterException;
@@ -301,15 +302,41 @@ public class CreateInvoice implements Initializable {
 
 
         pj.setPrintable(new PrintDocument(connection,id), pf);
-        if (pj.printDialog()) {
+        /*if (pj.printDialog()) {
             try {
                 pj.print();
             } catch (PrinterException e) {
                 System.out.println(e);
             }
+        }*/
+
+
+        PrintService ps = findPrintService();
+        //create a printerJob
+        PrinterJob job = PrinterJob.getPrinterJob();
+        //set the printService found (should be tested)
+        try {
+            job.setPrintService(ps);
+            //set the printable (an object with the print method that can be called by "job.print")
+            //job.setPrintable((Printable) this);
+            job.setPrintable(new PrintDocument(connection,id), pf);
+            //call je print method of the Printable object
+            job.print();
+
+        } catch (PrinterException e) {
+            e.printStackTrace();
         }
     }
+    public PrintService findPrintService()
+    {
+        for (PrintService service : PrinterJob.lookupPrintServices())
+        {
+            if (service.getName().equalsIgnoreCase("Microsoft Print to PDF"))
+                return service;
+        }
 
+        return null;
+    }
     @FXML
     private void Delete(){
         data.clear();

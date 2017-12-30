@@ -7,18 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/EmployeeMainPanelController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/FindProductController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/PrintDocument.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Employeemainpanel.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Invoice/Findproduct.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/login.fxml" afterPath="$PROJECT_DIR$/src/main/resources/login.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +73,7 @@
       <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
+            <state relative-caret-position="3366">
               <caret line="231" column="42" lean-forward="false" selection-start-line="225" selection-start-column="7" selection-end-line="231" selection-end-column="42" />
               <folding>
                 <marker date="1513931052446" expanded="true" signature="4265:4324" ph="SELECT user_... user" />
@@ -115,41 +108,52 @@
       <file leaf-file-name="MainPanelController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="261" column="42" lean-forward="false" selection-start-line="261" selection-start-column="42" selection-end-line="261" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintDocument.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/PrintDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+            <state relative-caret-position="901">
+              <caret line="91" column="93" lean-forward="false" selection-start-line="91" selection-start-column="93" selection-end-line="91" selection-end-column="93" />
               <folding>
-                <marker date="1514377411712" expanded="true" signature="1468:1506" ph="SELECT * FRO... buyer" />
-                <marker date="1514377411712" expanded="true" signature="1468:1507" ph="SELECT * FRO... buyer" />
-                <marker date="1514377411712" expanded="true" signature="1468:1514" ph="SELECT * FRO... buyer" />
-                <marker date="1514377411712" expanded="true" signature="2784:3025" ph="SELECT * FRO... buy_product_list" />
-                <marker date="1514377411712" expanded="true" signature="2784:3036" ph="SELECT * FRO... buy_product_list" />
+                <element signature="imports" expanded="true" />
+                <marker date="1514441473758" expanded="true" signature="1806:2039" ph="SELECT produ... category" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateInvoice.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4660#4661#0" expanded="true" />
+                <element signature="e#4718#4719#0" expanded="true" />
+                <marker date="1514441124119" expanded="true" signature="2154:2260" ph="SELECT `owne... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateInvoice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="288" column="5" lean-forward="false" selection-start-line="288" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
+            <state relative-caret-position="259">
+              <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
               <folding>
-                <element signature="method#Print#0;class#CreateInvoice#0" expanded="false" />
-                <marker date="1514375033336" expanded="true" signature="6094:6181" ph="SELECT user.... user" />
-                <marker date="1514375033336" expanded="true" signature="6441:6714" ph="SELECT categ... category" />
-                <marker date="1514375033336" expanded="true" signature="9348:9638" ph="INSERT INTO `buyer`... " />
-                <marker date="1514375033336" expanded="true" signature="9956:10185" ph="INSERT INTO `buy_product_list`... " />
+                <marker date="1514442718573" expanded="true" signature="6127:6214" ph="SELECT user.... user" />
+                <marker date="1514442718573" expanded="true" signature="6474:6747" ph="SELECT categ... category" />
+                <marker date="1514442718573" expanded="true" signature="9381:9671" ph="INSERT INTO `buyer`... " />
+                <marker date="1514442718573" expanded="true" signature="9989:10218" ph="INSERT INTO `buy_product_list`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddProduct.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/AddProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="120" column="11" lean-forward="false" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,8 +161,8 @@
       <file leaf-file-name="InvoiceList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="235" column="9" lean-forward="false" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
+            <state relative-caret-position="3213">
+              <caret line="241" column="5" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="241" selection-end-column="5" />
               <folding>
                 <marker date="1514377257191" expanded="true" signature="5124:5208" ph="SELECT user.... user" />
                 <marker date="1514377257191" expanded="true" signature="5471:5674" ph="SELECT * FRO... buyer" />
@@ -168,63 +172,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeMainPanelController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/EmployeeMainPanelController.java">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="2516">
+              <caret line="176" column="52" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="176" selection-end-column="52" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-              <folding>
-                <element signature="e#6426#6427#0" expanded="true" />
-                <element signature="e#6454#6455#0" expanded="true" />
-                <marker date="1514349730444" expanded="true" signature="2136:2203" ph="SELECT * FRO... user" />
-                <marker date="1514349730444" expanded="true" signature="3288:3597" ph="UPDATE `user`... " />
-                <marker date="1514349730444" expanded="true" signature="4137:4216" ph="SELECT user.... user" />
-                <marker date="1514349730444" expanded="true" signature="4502:4605" ph="UPDATE `user`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="77" column="99" lean-forward="false" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
-              <folding>
-                <element signature="e#4480#4481#0" expanded="true" />
-                <element signature="e#4538#4539#0" expanded="true" />
-                <marker date="1514349549384" expanded="true" signature="1974:2080" ph="SELECT `owne... user" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -279,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/autoTime.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mainpanel.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/Dashboard.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/product.fxml" />
@@ -322,14 +274,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/SellSheet/SellSheetTableData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/SellSheet/SellSheetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/FindProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/EmployeeMainPanelController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysapp/PrintDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/ExpDateNotice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java" />
       </list>
     </option>
   </component>
@@ -397,7 +350,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -407,30 +359,15 @@
             </path>
             <path>
               <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MYSApp" type="462c0819:PsiDirectoryNode" />
-              <item name="User Image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MYSApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -670,26 +607,29 @@
       <workItem from="1514222024910" duration="7239000" />
       <workItem from="1514271470596" duration="12253000" />
       <workItem from="1514360372862" duration="735000" />
-      <workItem from="1514374322782" duration="3257000" />
+      <workItem from="1514374322782" duration="5364000" />
+      <workItem from="1514390889867" duration="596000" />
+      <workItem from="1514437697586" duration="5645000" />
+      <workItem from="1514546140280" duration="70000" />
+      <workItem from="1514676252206" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190304000" />
+    <option name="totallyTimeSpent" value="198756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3518225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3518225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -699,8 +639,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -708,6 +648,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -738,7 +679,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://I:/JAVAFX Work/SupperShop/src/rongit/FXML/Settings.fxml" />
     <entry file="file://I:/JAVAFX Work/SupperShop/src/rongit/FXML/Settings.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Employee/addEmployee.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -889,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -935,13 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Dashboard/DashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="96" column="4" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -996,13 +928,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="80" column="59" lean-forward="true" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/FindProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1031,6 +956,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Employeemainpanel.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Dashboard/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="62" column="830" lean-forward="false" selection-start-line="62" selection-start-column="823" selection-end-line="62" selection-end-column="830" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/EmployeeMainPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/PrintDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="47" column="76" lean-forward="false" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="76" />
+          <folding>
+            <marker date="1514377411712" expanded="true" signature="1468:1506" ph="SELECT * FRO... buyer" />
+            <marker date="1514377411712" expanded="true" signature="1468:1507" ph="SELECT * FRO... buyer" />
+            <marker date="1514377411712" expanded="true" signature="1468:1514" ph="SELECT * FRO... buyer" />
+            <marker date="1514377411712" expanded="true" signature="2784:3025" ph="SELECT * FRO... buy_product_list" />
+            <marker date="1514377411712" expanded="true" signature="2784:3036" ph="SELECT * FRO... buy_product_list" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/AddProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
@@ -1039,63 +1024,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Employeemainpanel.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="77" column="99" lean-forward="false" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
-          <folding>
-            <element signature="e#4480#4481#0" expanded="true" />
-            <element signature="e#4538#4539#0" expanded="true" />
-            <marker date="1514349549384" expanded="true" signature="1974:2080" ph="SELECT `owne... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Setting/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-          <folding>
-            <element signature="e#6426#6427#0" expanded="true" />
-            <element signature="e#6454#6455#0" expanded="true" />
-            <marker date="1514349730444" expanded="true" signature="2136:2203" ph="SELECT * FRO... user" />
-            <marker date="1514349730444" expanded="true" signature="3288:3597" ph="UPDATE `user`... " />
-            <marker date="1514349730444" expanded="true" signature="4137:4216" ph="SELECT user.... user" />
-            <marker date="1514349730444" expanded="true" signature="4502:4605" ph="UPDATE `user`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Employee/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
+        <state relative-caret-position="3366">
           <caret line="231" column="42" lean-forward="false" selection-start-line="225" selection-start-column="7" selection-end-line="231" selection-end-column="42" />
           <folding>
             <marker date="1513931052446" expanded="true" signature="4265:4324" ph="SELECT user_... user" />
@@ -1126,40 +1057,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/EmployeeMainPanelController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/ExpDateNotice.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Product/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="2516">
+          <caret line="176" column="52" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="176" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
+            <element signature="e#4718#4719#0" expanded="true" />
+            <marker date="1514441124119" expanded="true" signature="2154:2260" ph="SELECT `owne... user" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/MainPanelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="261" column="42" lean-forward="false" selection-start-line="261" selection-start-column="42" selection-end-line="261" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="288" column="5" lean-forward="false" selection-start-line="288" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
+        <state relative-caret-position="901">
+          <caret line="91" column="93" lean-forward="false" selection-start-line="91" selection-start-column="93" selection-end-line="91" selection-end-column="93" />
           <folding>
-            <element signature="method#Print#0;class#CreateInvoice#0" expanded="false" />
-            <marker date="1514375033336" expanded="true" signature="6094:6181" ph="SELECT user.... user" />
-            <marker date="1514375033336" expanded="true" signature="6441:6714" ph="SELECT categ... category" />
-            <marker date="1514375033336" expanded="true" signature="9348:9638" ph="INSERT INTO `buyer`... " />
-            <marker date="1514375033336" expanded="true" signature="9956:10185" ph="INSERT INTO `buy_product_list`... " />
+            <element signature="imports" expanded="true" />
+            <marker date="1514441473758" expanded="true" signature="1806:2039" ph="SELECT produ... category" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/InvoiceList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="235" column="9" lean-forward="false" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
+        <state relative-caret-position="3213">
+          <caret line="241" column="5" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="241" selection-end-column="5" />
           <folding>
             <marker date="1514377257191" expanded="true" signature="5124:5208" ph="SELECT user.... user" />
             <marker date="1514377257191" expanded="true" signature="5471:5674" ph="SELECT * FRO... buyer" />
@@ -1168,16 +1102,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/PrintDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysapp/Invoice/CreateInvoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+        <state relative-caret-position="259">
+          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
           <folding>
-            <marker date="1514377411712" expanded="true" signature="1468:1506" ph="SELECT * FRO... buyer" />
-            <marker date="1514377411712" expanded="true" signature="1468:1507" ph="SELECT * FRO... buyer" />
-            <marker date="1514377411712" expanded="true" signature="1468:1514" ph="SELECT * FRO... buyer" />
-            <marker date="1514377411712" expanded="true" signature="2784:3025" ph="SELECT * FRO... buy_product_list" />
-            <marker date="1514377411712" expanded="true" signature="2784:3036" ph="SELECT * FRO... buy_product_list" />
+            <marker date="1514442718573" expanded="true" signature="6127:6214" ph="SELECT user.... user" />
+            <marker date="1514442718573" expanded="true" signature="6474:6747" ph="SELECT categ... category" />
+            <marker date="1514442718573" expanded="true" signature="9381:9671" ph="INSERT INTO `buyer`... " />
+            <marker date="1514442718573" expanded="true" signature="9989:10218" ph="INSERT INTO `buy_product_list`... " />
           </folding>
         </state>
       </provider>

@@ -11,28 +11,68 @@ import com.mysapp.Member.MemberController;
 import com.mysapp.Product.ProductController;
 import com.mysapp.SellSheet.SellSheetController;
 import com.mysapp.Setting.Settings;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class MainPanelController implements Initializable{
     @FXML
     private Text DateText,TimeText,subWindowTitle,AmPmText,UserFullName;
 
+    Task<Void> task = new Task<Void>() {
 
+        @Override
+        protected Void call() throws Exception {
+            try {
+                while (true){
+                    Statement statement = connection.createStatement();
+                    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                    Date dates = new Date();
+                    ResultSet rs = statement.executeQuery("SELECT product.pro_name,product.exp_date,product.pro_id FROM category JOIN `product` ON category.cat_id = product.cat_id WHERE product.exp_date < '"+dateFormat.format(dates)+"' and category.owner_id ='"+LoginController.All_OwnerID+"' ");
+
+                    while (rs.next()){
+                        updateMessage("Please check Your Product.\n"+rs.getString("pro_name") +" -> " + rs.getString("exp_date"));
+                        Thread.sleep(500);
+                    }
+                    try {
+                        Thread.sleep(5*60000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    rs.close();
+                    statement.close();
+
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+    };
 
     @FXML
     private AnchorPane subWindow;
@@ -48,6 +88,12 @@ public class MainPanelController implements Initializable{
         new autoTime(TimeText, AmPmText, DateText);
         UserFullName.setText(LoginController.All_FullName);
         DeshboardWindow();
+        task.messageProperty().addListener((observable, oldMessage, newMessage) ->
+                Notifications.create().title("Product Expired").hideAfter(Duration.seconds(10)).text(newMessage).darkStyle().show());
+
+
+        new Thread(task).start();
+
     }
 
     @FXML
@@ -67,6 +113,7 @@ public class MainPanelController implements Initializable{
         AnchorPane.setLeftAnchor(n, 0.0);
         AnchorPane.setBottomAnchor(n, 0.0);
         subWindow.getChildren().setAll(n);
+
     }
 
 

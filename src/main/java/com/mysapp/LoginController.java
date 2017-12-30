@@ -36,8 +36,15 @@ public class LoginController implements Initializable {
     public static int All_OwnerID = 0;
     public static String All_FullName;
 
+    static Notifications notice = Notifications.create()
+            .title("Product Expired")
+            .hideAfter(Duration.seconds(5))
+            .position(Pos.TOP_RIGHT);
+
+
     @FXML
     void LoginUser(ActionEvent event) {
+
         Notifications notifications = Notifications.create()
                 .title("Error")
                 .hideAfter(Duration.seconds(5))
