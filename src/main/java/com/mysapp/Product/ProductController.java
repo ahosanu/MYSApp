@@ -244,21 +244,15 @@ public class ProductController implements Initializable{
         Data = FXCollections.observableArrayList();
         try {
             Statement statement = connection.createStatement();
-            Statement statement1 = connection.createStatement();
-            ResultSet resultSet1 = statement1.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+ LoginController.All_UserID+"'");
-            if(resultSet1.next()) {
-                int get_owner_id = resultSet1.getInt("owner_id");
-                if (get_owner_id == 0)
-                    get_owner_id = LoginController.All_UserID;
 
-                ResultSet resultSet = statement.executeQuery("SELECT pro_id,pro_name,in_date,exp_date,sell_price,net_price,product.discount FROM `product` JOIN `category` ON product.cat_id = category.cat_id WHERE owner_id='"+get_owner_id+"' and pro_name LIKE '%" + keyword.getText() + "%'");
-                int i = 1;
-                while (resultSet.next()) {
+            ResultSet resultSet = statement.executeQuery("SELECT pro_id,pro_name,in_date,exp_date,sell_price,net_price,product.discount FROM `product` JOIN `category` ON product.cat_id = category.cat_id WHERE owner_id='"+LoginController.All_OwnerID+"' and pro_name LIKE '%" + keyword.getText() + "%'");
+            int i = 1;
+            while (resultSet.next()) {
 
-                    Data.add(new ProductTableDate(i, resultSet.getString("pro_name"), resultSet.getInt("pro_id"), resultSet.getDouble("sell_price"), resultSet.getDouble("net_price"), resultSet.getString("exp_date"), resultSet.getString("discount"), "editinfo"));
-                    i++;
-                }
+                Data.add(new ProductTableDate(i, resultSet.getString("pro_name"), resultSet.getInt("pro_id"), resultSet.getDouble("sell_price"), resultSet.getDouble("net_price"), resultSet.getString("exp_date"), resultSet.getString("discount"), "editinfo"));
+                i++;
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

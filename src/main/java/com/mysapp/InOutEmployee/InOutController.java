@@ -66,14 +66,8 @@ public class InOutController implements Initializable{
         Statement statement = null;
         try {
             statement = connection.createStatement();
-            ResultSet resultSet1 = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+ LoginController.All_UserID+"'");
-            if(resultSet1.next()) {
-                int get_owner_id = resultSet1.getInt("owner_id");
-                if (get_owner_id == 0)
-                    get_owner_id = LoginController.All_UserID;
-
-                resultSet1 = statement.executeQuery("SELECT user.user_id,user.full_name,in_out.nowdate,in_out.in_time,in_out.out_time FROM user JOIN in_out ON user.user_id = in_out.user_id WHERE " +
-                        "user.user_id LIKE '"+keyword.getText()+"%' AND in_out.nowdate LIKE '%"+Find_date+"%' AND user.owner_id ='"+get_owner_id+"'");
+            ResultSet resultSet1 = statement.executeQuery("SELECT user.user_id,user.full_name,in_out.nowdate,in_out.in_time,in_out.out_time FROM user JOIN in_out ON user.user_id = in_out.user_id WHERE " +
+                        "user.user_id LIKE '"+keyword.getText()+"%' AND in_out.nowdate LIKE '%"+Find_date+"%' AND user.owner_id ='"+LoginController.All_OwnerID+"'");
 
                 while (resultSet1.next()){
                     data.add(new InOutTableData(data.size()+1,resultSet1.getInt("user_id"),resultSet1.getString("full_name"),resultSet1.getString("nowdate"),resultSet1.getString("in_time"),resultSet1.getString("out_time")));
@@ -84,7 +78,7 @@ public class InOutController implements Initializable{
                 InOutTable.setItems(data);
                 InOutTable.refresh();
 
-            }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

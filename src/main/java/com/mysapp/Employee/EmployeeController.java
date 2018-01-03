@@ -237,8 +237,6 @@ public class EmployeeController implements Initializable {
                 DateTimeFormatter dateformate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 System.out.println("Return Result");
                 try {
-
-
                     Statement statement = connection.createStatement();
                     int i = statement.executeUpdate("INSERT INTO `user`(`user_name`, `password`, `type`, `email`, `full_name`, `address`, `permanent_address`, `salary`, `phone`, `photo`, `dateofbirth`, `owner_id`, `sex`) VALUES " +
                             "('"+addEmployee.user_name.getText()+"','12345','"+addEmployee.type.getSelectionModel().getSelectedItem()+"','"+addEmployee.Email_id.getText()+"'," +
@@ -249,7 +247,6 @@ public class EmployeeController implements Initializable {
                     e.printStackTrace();
                 }
             }
-
         });
         stage.show();
     }

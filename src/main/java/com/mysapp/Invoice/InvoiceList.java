@@ -141,22 +141,17 @@ public class InvoiceList implements Initializable{
         }
         try {
             Statement statement = connection.createStatement();
-            ResultSet resultSet1 = statement.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+ LoginController.All_UserID+"'");
-            if(resultSet1.next()) {
-                int get_owner_id = resultSet1.getInt("owner_id");
-                if (get_owner_id == 0)
-                    get_owner_id = LoginController.All_UserID;
+            ResultSet resultSet1 = statement.executeQuery("SELECT * FROM `buyer` WHERE nowdate LIKE '%"+Find_date+"%' and buyer_id LIKE '%"+keyword.getText()+"%' and buyer.user_id IN (SELECT user.owner_id FROM user WHERE user_id='"+LoginController.All_UserID+"')");
+            while (resultSet1.next()) {
+                Date date = new SimpleDateFormat("dd/MM/yyyy").parse( resultSet1.getString("nowdate"));
+                data.add(new InvoiceListTableDate(data.size()+1, resultSet1.getString("buyer_name"), "MYS-"+resultSet1.getInt("buyer_id")+"-"+((date.getTime()/10000)+resultSet1.getInt("buyer_id")), resultSet1.getDouble("payed_amount"), resultSet1.getString("nowdate"), resultSet1.getInt("buyer_id")));
 
-
-                resultSet1 = statement.executeQuery("SELECT * FROM `buyer` WHERE nowdate LIKE '%"+Find_date+"%' and buyer_id LIKE '%"+keyword.getText()+"%' and buyer.user_id IN (SELECT user.owner_id FROM user WHERE user_id='"+LoginController.All_UserID+"')");
-                while (resultSet1.next()) {
-                    Date date = new SimpleDateFormat("dd/MM/yyyy").parse( resultSet1.getString("nowdate"));
-                    data.add(new InvoiceListTableDate(data.size()+1, resultSet1.getString("buyer_name"), "MYS-"+resultSet1.getInt("buyer_id")+"-"+((date.getTime()/10000)+resultSet1.getInt("buyer_id")), resultSet1.getDouble("payed_amount"), resultSet1.getString("nowdate"), resultSet1.getInt("buyer_id")));
-
-                }
-                InvoiceTable.setItems(data);
-                InvoiceTable.refresh();
             }
+            InvoiceTable.setItems(data);
+            InvoiceTable.refresh();
+            resultSet1.close();
+            statement.close();
+
 
         } catch (SQLException e) {
             e.printStackTrace();

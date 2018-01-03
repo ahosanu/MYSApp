@@ -46,25 +46,18 @@ public class CategoryController implements Initializable {
     private void LoadTable() {
         try {
             Statement statement = connection.createStatement();
-            Statement statement1 = connection.createStatement();
-            ResultSet resultSet = statement1.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='"+LoginController.All_UserID+"'");
-            if(resultSet.next()) {
-                int get_owner_id = resultSet.getInt("owner_id");
-                if(get_owner_id == 0)
-                    get_owner_id = LoginController.All_UserID;
+            ResultSet rs = statement.executeQuery("SELECT * FROM category LEFT JOIN (SELECT cat_id as bycatid, SUM(net_price) as totalamount,COUNT(pro_name) as totalproduct FROM `product` GROUP BY cat_id) as productall  ON category.cat_id = productall.bycatid WHERE owner_id='"+LoginController.All_OwnerID+"' and cat_name LIKE '%"+keyword.getText()+"%'");
+            Data = FXCollections.observableArrayList();
 
-                ResultSet rs = statement.executeQuery("SELECT * FROM category LEFT JOIN (SELECT cat_id as bycatid, SUM(net_price) as totalamount,COUNT(pro_name) as totalproduct FROM `product` GROUP BY cat_id) as productall  ON category.cat_id = productall.bycatid WHERE owner_id='"+get_owner_id+"' and cat_name LIKE '%"+keyword.getText()+"%'");
-                Data = FXCollections.observableArrayList();
-
-                while (rs.next()) {
-                    Data.add(new CategoryTableData(Data.size() + 1, rs.getString("cat_name"), rs.getInt("cat_id"), rs.getInt("totalproduct"), rs.getDouble("totalamount"), rs.getDouble("Discount")));
-                }
-                categoeyTable.getItems().clear();
-                categoeyTable.setItems(Data);
-                categoeyTable.refresh();
-                rs.close();
-                statement.close();
+            while (rs.next()) {
+                Data.add(new CategoryTableData(Data.size() + 1, rs.getString("cat_name"), rs.getInt("cat_id"), rs.getInt("totalproduct"), rs.getDouble("totalamount"), rs.getDouble("Discount")));
             }
+            categoeyTable.getItems().clear();
+            categoeyTable.setItems(Data);
+            categoeyTable.refresh();
+            rs.close();
+            statement.close();
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -91,21 +84,12 @@ public class CategoryController implements Initializable {
             int ok=0;
             if(!Category_name.getText().isEmpty()) {
                 Statement statement1 = connection.createStatement();
-                ResultSet rs = statement1.executeQuery("SELECT user.owner_id FROM user WHERE user.user_id ='" + LoginController.All_UserID + "'");
-                if (rs.next()) {
-                    int get_owner_id = rs.getInt("owner_id");
-                    if (get_owner_id == 0)
-                        get_owner_id = LoginController.All_UserID;
-                    try {
-                        ok = statement.executeUpdate("INSERT INTO `category`(`cat_name`, `owner_id`, `Discount`) VALUES ('" + Category_name.getText() + "', '" + get_owner_id + "' ,'" + Double.parseDouble(Category_Discount.getText()) + "')");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        ok = 0;
-                    }
+                try {
+                    ok = statement.executeUpdate("INSERT INTO `category`(`cat_name`, `owner_id`, `Discount`) VALUES ('" + Category_name.getText() + "', '" + LoginController.All_OwnerID + "' ,'" + Double.parseDouble(Category_Discount.getText()) + "')");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    ok = 0;
                 }
-
-
-
                 if(ok == 1){
                     Notifications notifications = Notifications.create()
                             .title("Successful")
